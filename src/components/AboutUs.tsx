@@ -1,4 +1,4 @@
-import { Heart, Eye, Shield, Award, Users, Target, TrendingUp, Zap } from 'lucide-react';
+import { Heart, Eye, Shield, Award, Users, Target, TrendingUp, Zap, Building2, Globe, Sparkles } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 export default function AboutUs() {
@@ -7,66 +7,34 @@ export default function AboutUs() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.2 }
+      ([entry]) => { if (entry.isIntersecting) setIsVisible(true); },
+      { threshold: 0.1 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
   const coreValues = [
-    {
-      icon: Shield,
-      title: 'Integrity',
-      description: 'We operate with honesty and transparency in all dealings.',
-    },
-    {
-      icon: Award,
-      title: 'Professionalism',
-      description: 'We uphold high standards in every project and commitment.',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Excellence',
-      description: 'We strive for superior quality and outstanding performance.',
-    },
-    {
-      icon: Users,
-      title: 'Accountability',
-      description: 'We take full responsibility for our commitments and results.',
-    },
-    {
-      icon: Zap,
-      title: 'Long-term Partnerships',
-      description: 'We focus on building lasting, mutually beneficial relationships.',
-    },
-    {
-      icon: Target,
-      title: 'Sustainable Growth',
-      description: 'We create value that endures and benefits all stakeholders.',
-    },
+    { icon: Shield, title: 'Integrity', description: 'We operate with honesty and transparency in all dealings.' },
+    { icon: Award, title: 'Professionalism', description: 'We uphold high standards in every project and commitment.' },
+    { icon: TrendingUp, title: 'Excellence', description: 'We strive for superior quality and outstanding performance.' },
+    { icon: Users, title: 'Accountability', description: 'We take full responsibility for our commitments and results.' },
+    { icon: Zap, title: 'Long-term Partnerships', description: 'We focus on building lasting, mutually beneficial relationships.' },
+    { icon: Target, title: 'Sustainable Growth', description: 'We create value that endures and benefits all stakeholders.' },
   ];
 
   return (
-    <section ref={sectionRef} className="relative py-24 bg-white overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#992828]/5 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#2A266A]/5 rounded-full blur-3xl -z-10"></div>
+    <section id="about" ref={sectionRef} className="relative py-24 bg-white overflow-hidden">
+      {/* Floating background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#992828]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#2A266A]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 right-[10%] animate-float opacity-[0.06]"><Building2 className="w-16 h-16 text-[#2A266A]" /></div>
+      <div className="absolute bottom-40 left-[5%] animate-float-slow opacity-[0.06]"><Globe className="w-20 h-20 text-[#992828]" /></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="mb-20">
-          <div
-            className={`transform transition-all duration-1000 ${
-              isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-            }`}
-          >
+          <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="inline-flex items-center space-x-2 bg-[#2A266A]/10 border border-[#2A266A]/30 rounded-full px-5 py-2 mb-6">
               <Heart className="w-4 h-4 text-[#992828]" />
               <span className="text-[#2A266A] text-sm font-semibold">ABOUT US</span>
@@ -81,117 +49,98 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
-          <div
-            className={`transform transition-all duration-1000 delay-200 ${
-              isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
-            }`}
-          >
-            <div className="bg-gradient-to-br from-[#2A266A] to-[#3d3585] rounded-2xl p-10 text-white shadow-2xl">
-              <Eye className="w-12 h-12 text-[#992828] mb-4" />
-              <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
-              <p className="text-lg leading-relaxed">
-                To become a leading multi-sector company recognized for reliability, transparency, and innovation. We aspire to be the trusted partner of choice for investors, businesses, and stakeholders seeking sustainable and profitable growth.
-              </p>
+        {/* Vision & Mission - Enhanced */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+          <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+            <div className="relative group bg-gradient-to-br from-[#2A266A] to-[#3d3585] rounded-2xl p-10 text-white shadow-2xl overflow-hidden h-full">
+              {/* Animated bg pattern */}
+              <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+              {/* Floating shapes inside */}
+              <div className="absolute -top-6 -right-6 w-32 h-32 border-2 border-white/10 rounded-full animate-spin-slow"></div>
+              <div className="absolute bottom-4 right-8 w-16 h-16 border border-white/10 rounded-xl animate-float rotate-45"></div>
+              <div className="absolute top-1/2 right-4 opacity-10 animate-float-delayed">
+                <Sparkles className="w-8 h-8 text-white" />
+              </div>
+              {/* Glow orb */}
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-[#992828]/20 rounded-full blur-3xl"></div>
+
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                  <Eye className="w-8 h-8 text-[#ff6b6b]" />
+                </div>
+                <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
+                <p className="text-lg leading-relaxed text-white/85">
+                  To become a leading multi-sector company recognized for reliability, transparency, and innovation. We aspire to be the trusted partner of choice for investors, businesses, and stakeholders seeking sustainable and profitable growth.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div
-            className={`transform transition-all duration-1000 delay-300 ${
-              isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
-            }`}
-          >
-            <div className="bg-gradient-to-br from-[#992828] to-[#c93030] rounded-2xl p-10 text-white shadow-2xl">
-              <Target className="w-12 h-12 text-white mb-4" />
-              <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
-              <p className="text-lg leading-relaxed">
-                To create sustainable value through strategic investments, quality construction, and efficient global trade operations. We are committed to delivering reliable, profitable solutions tailored to individuals, businesses, and investors.
-              </p>
+          <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
+            <div className="relative group bg-gradient-to-br from-[#992828] to-[#c93030] rounded-2xl p-10 text-white shadow-2xl overflow-hidden h-full">
+              {/* Animated bg pattern */}
+              <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+              {/* Floating shapes inside */}
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 border-2 border-white/10 rounded-full animate-spin-reverse"></div>
+              <div className="absolute top-4 left-8 w-16 h-16 border border-white/10 rounded-xl animate-float-slow rotate-12"></div>
+              <div className="absolute bottom-1/3 left-4 opacity-10 animate-float">
+                <TrendingUp className="w-8 h-8 text-white" />
+              </div>
+              {/* Glow orb */}
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#2A266A]/20 rounded-full blur-3xl"></div>
+
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
+                <p className="text-lg leading-relaxed text-white/85">
+                  To create sustainable value through strategic investments, quality construction, and efficient global trade operations. We are committed to delivering reliable, profitable solutions tailored to individuals, businesses, and investors.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div
-          className={`mb-20 transform transition-all duration-1000 delay-400 ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-          }`}
-        >
-          <h3 className="text-4xl font-bold text-[#2A266A] mb-12 text-center">
-            Our Core Values
-          </h3>
+        {/* Core Values */}
+        <div className={`mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: '400ms' }}>
+          <h3 className="text-4xl font-bold text-[#2A266A] mb-12 text-center">Our Core Values</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coreValues.map((value, index) => (
-              <div
-                key={index}
-                className={`group transform transition-all duration-700 delay-${
-                  index * 100
-                } ${
-                  isVisible
-                    ? 'translate-y-0 opacity-100'
-                    : 'translate-y-10 opacity-0'
-                }`}
-              >
-                <div className="bg-white border-2 border-gray-100 rounded-xl p-8 h-full hover:border-[#992828] hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div key={index} className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${500 + index * 100}ms` }}>
+                <div className="group bg-white border-2 border-gray-100 rounded-xl p-8 h-full hover:border-[#992828] hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="w-14 h-14 bg-gradient-to-br from-[#992828] to-[#c93030] rounded-lg flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                     <value.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h4 className="text-2xl font-bold text-[#2A266A] mb-3">
-                    {value.title}
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    {value.description}
-                  </p>
+                  <h4 className="text-2xl font-bold text-[#2A266A] mb-3">{value.title}</h4>
+                  <p className="text-gray-600 leading-relaxed">{value.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          {[
-            {
-              image:
-                'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-              alt: 'Professional workspace',
-            },
-            {
-              image:
-                'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
-              alt: 'Team collaboration',
-            },
-            {
-              image:
-                'https://images.pexels.com/photos/3926961/pexels-photo-3926961.jpeg?auto=compress&cs=tinysrgb&w=600',
-              alt: 'Business planning',
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className={`transform transition-all duration-700 delay-${
-                500 + index * 100
-              } ${
-                isVisible
-                  ? 'translate-y-0 opacity-100'
-                  : 'translate-y-10 opacity-0'
-              }`}
-            >
-              <div className="relative rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow group">
-                <img
-                  src={item.image}
-                  alt={item.alt}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2A266A]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Multi-Sector Expertise - Enhanced */}
+        <div className="relative bg-gradient-to-r from-[#2A266A] via-[#3d3585] to-[#2A266A] rounded-2xl p-12 text-white overflow-hidden">
+          {/* Animated bg elements */}
+          <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+          <div className="absolute -top-10 -left-10 w-40 h-40 bg-[#992828]/20 rounded-full blur-3xl animate-pulse-soft"></div>
+          <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-[#992828]/15 rounded-full blur-3xl animate-pulse-soft animation-delay-2000"></div>
+          <div className="absolute top-6 right-10 animate-float opacity-10"><Globe className="w-12 h-12 text-white" /></div>
+          <div className="absolute bottom-6 left-10 animate-float-slow opacity-10"><Building2 className="w-10 h-10 text-white" /></div>
+          <div className="absolute top-1/2 right-1/4 w-20 h-20 border border-white/10 rounded-full animate-spin-slow"></div>
+          <div className="absolute bottom-1/3 left-1/3 w-12 h-12 border border-white/5 rounded-xl animate-float-delayed rotate-45"></div>
 
-        <div className="bg-gradient-to-r from-[#2A266A] to-[#3d3585] rounded-2xl p-12 text-white text-center">
-          <h3 className="text-3xl font-bold mb-4">Multi-Sector Expertise</h3>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            With a diversified structure and multi-sector expertise, we are positioned to adapt to emerging opportunities across industries while maintaining transparency, efficiency, and accountability in all our operations. Our collaborative approach ensures we deliver measurable, sustainable results.
-          </p>
+          <div className="relative z-10 text-center">
+            <div className="inline-flex items-center space-x-2 bg-white/10 border border-white/20 rounded-full px-5 py-2 mb-6">
+              <Sparkles className="w-4 h-4 text-[#ff6b6b]" />
+              <span className="text-white text-sm font-semibold">OUR EXPERTISE</span>
+            </div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Multi-Sector Expertise</h3>
+            <p className="text-lg leading-relaxed max-w-3xl mx-auto text-white/80">
+              With a diversified structure and multi-sector expertise, we are positioned to adapt to emerging opportunities across industries while maintaining transparency, efficiency, and accountability in all our operations. Our collaborative approach ensures we deliver measurable, sustainable results.
+            </p>
+          </div>
         </div>
       </div>
     </section>

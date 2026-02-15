@@ -1,4 +1,4 @@
-import { ArrowRight, Play, TrendingUp, Zap, Target } from 'lucide-react';
+import { ArrowRight, Play, TrendingUp, Zap, Target, Building2, Globe, Briefcase } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 export default function Hero() {
@@ -9,49 +9,74 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white pt-20 md:pt-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2A266A] via-[#1e1b52] to-[#2A266A] pt-20 md:pt-0">
+      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -left-1/4 w-96 h-96 bg-[#992828] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-        <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-[#2A266A] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+        {/* Gradient orbs */}
+        <div className="absolute -top-1/3 -left-1/4 w-[600px] h-[600px] bg-[#992828] rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-blob"></div>
+        <div className="absolute -bottom-1/3 -right-1/4 w-[500px] h-[500px] bg-[#992828] rounded-full mix-blend-screen filter blur-[100px] opacity-15 animate-blob animation-delay-2000"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#3d3585] rounded-full filter blur-[150px] opacity-30"></div>
+
+        {/* Grid pattern */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+
+        {/* Floating geometric shapes */}
+        <div className="absolute top-20 left-[10%] w-20 h-20 border-2 border-white/10 rounded-xl animate-float rotate-12"></div>
+        <div className="absolute top-40 right-[15%] w-16 h-16 border-2 border-[#992828]/20 rounded-full animate-float-slow"></div>
+        <div className="absolute bottom-32 left-[20%] w-12 h-12 bg-[#992828]/10 rounded-lg animate-float-delayed rotate-45"></div>
+        <div className="absolute top-1/3 right-[8%] w-24 h-24 border border-white/5 rounded-2xl animate-spin-slow"></div>
+        <div className="absolute bottom-1/4 right-[30%] w-8 h-8 bg-white/5 rounded-full animate-bounce-gentle"></div>
+        <div className="absolute top-[60%] left-[5%] w-14 h-14 border border-[#992828]/15 rounded-xl animate-float rotate-[30deg]"></div>
+
+        {/* Floating icons */}
+        <div className="absolute top-[25%] left-[8%] animate-float opacity-10">
+          <Building2 className="w-10 h-10 text-white" />
+        </div>
+        <div className="absolute top-[15%] right-[12%] animate-float-slow opacity-10">
+          <Globe className="w-12 h-12 text-white" />
+        </div>
+        <div className="absolute bottom-[20%] left-[15%] animate-float-delayed opacity-10">
+          <Briefcase className="w-8 h-8 text-white" />
+        </div>
+        <div className="absolute bottom-[35%] right-[10%] animate-float opacity-10">
+          <TrendingUp className="w-10 h-10 text-white" />
+        </div>
+
+        {/* Decorative lines */}
+        <svg className="absolute top-0 left-0 w-full h-full opacity-5" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="30%" x2="100%" y2="70%" stroke="white" strokeWidth="1" />
+          <line x1="100%" y1="20%" x2="0" y2="80%" stroke="white" strokeWidth="0.5" />
+          <circle cx="50%" cy="50%" r="200" stroke="white" strokeWidth="0.5" fill="none" className="animate-spin-slow" />
+        </svg>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div
-            className={`transform transition-all duration-700 ${
-              isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
-            }`}
-          >
-            <div className="inline-flex items-center space-x-2 bg-[#992828]/10 border border-[#992828]/30 rounded-full px-5 py-2 mb-8">
-              <Zap className="w-4 h-4 text-[#992828]" />
-              <span className="text-[#992828] text-sm font-semibold">
-                Trusted Investment Partner
-              </span>
+          <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 mb-8">
+              <Zap className="w-4 h-4 text-[#ff6b6b]" />
+              <span className="text-white/90 text-sm font-semibold">Trusted Investment Partner</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#2A266A] mb-6 leading-tight">
-              <span className={`inline-block transition-all duration-1000 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              <span className={`inline-block transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                 Building value, creating
               </span>
-              <span className={`block text-[#992828] transition-all duration-1000 delay-300 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}>opportunities</span>
+              <span className={`block text-transparent bg-clip-text bg-gradient-to-r from-[#ff6b6b] to-[#ffa8a8] transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                opportunities
+              </span>
             </h1>
 
-            <p className={`text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-lg transition-all duration-1000 delay-500 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-            }`}>
-              and delivering excellence across every venture
+            <p className={`text-lg md:text-xl text-white/70 mb-8 leading-relaxed max-w-lg transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+              and delivering excellence across every venture. We are a diversified investment and development company providing real estate, construction, global trade, and business solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-12">
-              <button className="group bg-gradient-to-r from-[#992828] to-[#c93030] text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#992828]/50">
+              <button className="group bg-gradient-to-r from-[#992828] to-[#c93030] text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#992828]/30 hover:shadow-xl hover:shadow-[#992828]/50">
                 <span>Start Partnership</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="group bg-white border-2 border-[#2A266A] text-[#2A266A] px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 hover:bg-[#2A266A] hover:text-white transition-all duration-300">
+              <button className="group bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 hover:bg-white/20 transition-all duration-300">
                 <Play className="w-5 h-5" />
                 <span>Learn More</span>
               </button>
@@ -63,21 +88,14 @@ export default function Hero() {
                 { icon: Target, label: '100%', sublabel: 'Transparency' },
                 { icon: Zap, label: 'Proven', sublabel: 'Track Record' },
               ].map((stat, index) => (
-                <div
-                  key={index}
-                  className={`transform transition-all duration-500 delay-${index * 100} ${
-                    isVisible
-                      ? 'translate-y-0 opacity-100'
-                      : 'translate-y-10 opacity-0'
-                  }`}
-                >
+                <div key={index} className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${700 + index * 150}ms` }}>
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-[#992828]/10 rounded-lg flex items-center justify-center">
-                      <stat.icon className="w-6 h-6 text-[#992828]" />
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg flex items-center justify-center">
+                      <stat.icon className="w-6 h-6 text-[#ff6b6b]" />
                     </div>
                     <div>
-                      <div className="font-bold text-[#2A266A]">{stat.label}</div>
-                      <div className="text-sm text-gray-600">{stat.sublabel}</div>
+                      <div className="font-bold text-white">{stat.label}</div>
+                      <div className="text-sm text-white/60">{stat.sublabel}</div>
                     </div>
                   </div>
                 </div>
@@ -85,23 +103,34 @@ export default function Hero() {
             </div>
           </div>
 
-          <div
-            className={`transform transition-all duration-700 delay-100 ${
-              isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
-            }`}
-          >
+          <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden">
-                <img
-                  src="/HERO.png"
-                  alt="BuildWell Africa - Professional business solutions"
-                  className="w-full h-[500px] object-contain bg-white"
-                />
+              {/* Glowing ring behind image */}
+              <div className="absolute -inset-4 bg-gradient-to-br from-[#992828]/30 to-[#2A266A]/30 rounded-3xl blur-2xl animate-pulse-soft"></div>
+              <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                <img src="/HERO.png" alt="BuildWell Africa - Professional business solutions" className="w-full h-[500px] object-contain bg-white/5 backdrop-blur-sm" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2A266A]/20 to-transparent"></div>
+              </div>
+              {/* Floating accent cards */}
+              <div className="absolute -bottom-4 -left-4 bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-4 animate-float">
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                  <span className="text-white text-sm font-medium">Active Projects</span>
+                </div>
+              </div>
+              <div className="absolute -top-4 -right-4 bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-4 animate-float-delayed">
+                <div className="text-center">
+                  <div className="text-[#ff6b6b] font-bold text-lg">15+</div>
+                  <div className="text-white/70 text-xs">Years</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
     </section>
   );
 }
