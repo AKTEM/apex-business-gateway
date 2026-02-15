@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
@@ -9,21 +9,14 @@ import Partnerships from './components/Partnerships';
 import CTASection from './components/CTASection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import RealEstatePage from './pages/RealEstatePage';
+import ConstructionPage from './pages/ConstructionPage';
+import ImportExportPage from './pages/ImportExportPage';
+import BusinessSolutionsPage from './pages/BusinessSolutionsPage';
 
-function App() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
+function HomePage() {
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
-      <Navbar scrolled={scrolled} />
+    <>
       <Hero />
       <AboutUs />
       <Services />
@@ -31,9 +24,37 @@ function App() {
       <OurApproach />
       <Partnerships />
       <CTASection />
-      <Contact />
+      <div id="contact"><Contact /></div>
       <Footer />
-    </div>
+    </>
+  );
+}
+
+function ServicePageLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <div className="pt-20">{children}</div>
+      <CTASection />
+      <div id="contact"><Contact /></div>
+      <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen bg-white overflow-hidden">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services/real-estate" element={<ServicePageLayout><RealEstatePage /></ServicePageLayout>} />
+          <Route path="/services/construction" element={<ServicePageLayout><ConstructionPage /></ServicePageLayout>} />
+          <Route path="/services/import-export" element={<ServicePageLayout><ImportExportPage /></ServicePageLayout>} />
+          <Route path="/services/business-solutions" element={<ServicePageLayout><BusinessSolutionsPage /></ServicePageLayout>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
