@@ -1,102 +1,95 @@
-import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Twitter, Linkedin, Mail, Phone } from 'lucide-react';
 
-const Footer = () => {
+export default function Footer() {
+  const footerLinks = {
+    Services: ['Real Estate', 'Construction', 'Import & Export', 'Business Solutions'],
+    Company: ['About Us', 'Our Approach', 'Why Choose Us', 'Partnerships'],
+    Resources: ['Blog', 'Case Studies', 'FAQ', 'Contact'],
+    Legal: ['Privacy Policy', 'Terms & Conditions', 'Cookie Policy', 'Compliance'],
+  };
+
   return (
-    <footer className="bg-navy-dark pt-16 pb-8">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* Brand */}
-          <div>
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center text-accent-foreground font-display font-bold text-xl">
-                B
-              </div>
-              <span className="text-primary-foreground font-display text-xl font-bold">
-                Buildwell <span className="text-accent">Africa</span>
-              </span>
-            </Link>
-            <p className="text-primary-foreground/50 text-sm leading-relaxed">
-              A diversified investment and development company delivering sustainable value, operational excellence, and long-term profitability.
+    <footer className="bg-[#2A266A] text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-12">
+          <div className="lg:col-span-2">
+            <div className="mb-4">
+              <img
+                src="/BUILD-LOGO.png"
+                alt="BuildWell Africa Logo"
+                className="h-16 w-auto object-contain brightness-0 invert"
+              />
+            </div>
+            <p className="text-gray-300 mb-6 leading-relaxed">
+              Empowering businesses worldwide with innovative solutions that
+              drive growth and success.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-display text-lg font-semibold text-primary-foreground mb-4">Quick Links</h4>
-            <ul className="space-y-3">
+            <div className="flex space-x-4">
               {[
-                { label: "Home", href: "/" },
-                { label: "About Us", href: "/about" },
-                { label: "Services", href: "/services" },
-                { label: "Contact", href: "/contact" },
-              ].map((link) => (
-                <li key={link.label}>
-                  <Link
-                    to={link.href}
-                    className="text-primary-foreground/50 hover:text-accent text-sm transition-colors duration-300"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
+                { icon: Twitter, href: '#', label: 'Twitter' },
+                { icon: Linkedin, href: '#', label: 'LinkedIn' },
+                { icon: Mail, href: '#', label: 'Email' },
+                { icon: Phone, href: '#', label: 'Phone' },
+              ].map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#992828] transition-all duration-300 hover:scale-110"
+                  title={social.label}
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-display text-lg font-semibold text-primary-foreground mb-4">Services</h4>
-            <ul className="space-y-3">
-              {["Real Estate Investment", "Construction", "Import & Export", "Business Solutions"].map((s) => (
-                <li key={s}>
-                  <Link to="/services" className="text-primary-foreground/50 hover:text-accent text-sm transition-colors duration-300">
-                    {s}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-display text-lg font-semibold text-primary-foreground mb-4">Contact Info</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-accent mt-0.5 shrink-0" />
-                <span className="text-primary-foreground/50 text-sm">[Office Address]</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-accent shrink-0" />
-                <span className="text-primary-foreground/50 text-sm">[Phone Number]</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-accent shrink-0" />
-                <span className="text-primary-foreground/50 text-sm">[Email Address]</span>
-              </li>
-            </ul>
-          </div>
+          {Object.entries(footerLinks).map(([category, links]) => (
+            <div key={category}>
+              <h3 className="font-bold text-lg mb-4">{category}</h3>
+              <ul className="space-y-3">
+                {links.map((link) => (
+                  <li key={link}>
+                    <a
+                      href={`#${link.toLowerCase().replace(' ', '-')}`}
+                      className="text-gray-300 hover:text-[#992828] transition-colors duration-300"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-primary-foreground/40 text-sm">
-            © {new Date().getFullYear()} Buildwell Africa. All rights reserved.
-          </p>
-          <div className="flex items-center gap-4">
-            {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+        <div className="border-t border-white/10 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-sm">
+              © 2024 BuildWell Africa. All rights reserved.
+            </p>
+            <div className="flex space-x-6 text-sm">
               <a
-                key={i}
-                href="#"
-                className="w-9 h-9 rounded-full bg-primary-foreground/5 border border-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all duration-300"
+                href="#privacy"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
               >
-                <Icon className="w-4 h-4 text-primary-foreground/60 hover:text-accent-foreground" />
+                Privacy Policy
               </a>
-            ))}
+              <a
+                href="#terms"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#cookies"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                Cookie Settings
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
