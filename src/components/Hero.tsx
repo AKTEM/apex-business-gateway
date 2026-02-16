@@ -1,15 +1,25 @@
-import { ArrowRight, Play, TrendingUp, Zap, Target, Building2, Globe, Briefcase } from 'lucide-react';
+import { ArrowRight, Play, TrendingUp, Zap, Target, Briefcase, HardHat, Ship, Home, Landmark, Truck, Warehouse } from 'lucide-react';
 import { useEffect, useState } from 'react';
+
+const heroImages = ['/HERO.png', '/HERO2.png'];
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2A266A] via-[#1e1b52] to-[#2A266A] pt-20 md:pt-0">
+    <section className="relative min-h-[110vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2A266A] via-[#1e1b52] to-[#2A266A] pt-20 md:pt-0">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Gradient orbs */}
@@ -26,20 +36,28 @@ export default function Hero() {
         <div className="absolute bottom-32 left-[20%] w-12 h-12 bg-[#992828]/10 rounded-lg animate-float-delayed rotate-45"></div>
         <div className="absolute top-1/3 right-[8%] w-24 h-24 border border-white/5 rounded-2xl animate-spin-slow"></div>
         <div className="absolute bottom-1/4 right-[30%] w-8 h-8 bg-white/5 rounded-full animate-bounce-gentle"></div>
-        <div className="absolute top-[60%] left-[5%] w-14 h-14 border border-[#992828]/15 rounded-xl animate-float rotate-[30deg]"></div>
 
-        {/* Floating icons */}
-        <div className="absolute top-[25%] left-[8%] animate-float opacity-10">
-          <Building2 className="w-10 h-10 text-white" />
+        {/* Service-related floating icons */}
+        <div className="absolute top-[20%] left-[6%] animate-float opacity-10">
+          <HardHat className="w-10 h-10 text-white" />
         </div>
-        <div className="absolute top-[15%] right-[12%] animate-float-slow opacity-10">
-          <Globe className="w-12 h-12 text-white" />
+        <div className="absolute top-[12%] right-[10%] animate-float-slow opacity-10">
+          <Ship className="w-12 h-12 text-white" />
         </div>
-        <div className="absolute bottom-[20%] left-[15%] animate-float-delayed opacity-10">
+        <div className="absolute bottom-[25%] left-[12%] animate-float-delayed opacity-10">
+          <Home className="w-9 h-9 text-white" />
+        </div>
+        <div className="absolute bottom-[40%] right-[8%] animate-float opacity-10">
+          <Landmark className="w-10 h-10 text-white" />
+        </div>
+        <div className="absolute top-[55%] left-[4%] animate-float-slow opacity-8">
+          <Truck className="w-8 h-8 text-white" />
+        </div>
+        <div className="absolute top-[35%] right-[18%] animate-float-delayed opacity-8">
+          <Warehouse className="w-9 h-9 text-white" />
+        </div>
+        <div className="absolute bottom-[15%] right-[22%] animate-float opacity-8">
           <Briefcase className="w-8 h-8 text-white" />
-        </div>
-        <div className="absolute bottom-[35%] right-[10%] animate-float opacity-10">
-          <TrendingUp className="w-10 h-10 text-white" />
         </div>
 
         {/* Decorative lines */}
@@ -103,12 +121,20 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Image carousel with crossfade */}
           <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <div className="relative">
               {/* Glowing ring behind image */}
               <div className="absolute -inset-4 bg-gradient-to-br from-[#992828]/30 to-[#2A266A]/30 rounded-3xl blur-2xl animate-pulse-soft"></div>
-              <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                <img src="/HERO.png" alt="BuildWell Africa - Professional business solutions" className="w-full h-[500px] object-contain bg-white/5 backdrop-blur-sm" />
+              <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-[500px]">
+                {heroImages.map((src, index) => (
+                  <img
+                    key={src}
+                    src={src}
+                    alt={`BuildWell Africa - ${index === 0 ? 'Professional business solutions' : 'Construction and services'}`}
+                    className={`absolute inset-0 w-full h-full object-contain bg-white/5 backdrop-blur-sm transition-opacity duration-1000 ease-in-out ${currentImage === index ? 'opacity-100' : 'opacity-0'}`}
+                  />
+                ))}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2A266A]/20 to-transparent"></div>
               </div>
               {/* Floating accent cards */}
@@ -124,13 +150,23 @@ export default function Hero() {
                   <div className="text-white/70 text-xs">Years</div>
                 </div>
               </div>
+              {/* Image indicator dots */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+                {heroImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImage(index)}
+                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${currentImage === index ? 'bg-white scale-125' : 'bg-white/40'}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+      {/* Bottom solid boundary - reduced gradient, more distinct */}
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white/80 to-transparent"></div>
     </section>
   );
 }
