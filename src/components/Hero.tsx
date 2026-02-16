@@ -1,7 +1,7 @@
 import { ArrowRight, Play, TrendingUp, Zap, Target, Briefcase, HardHat, Ship, Home, Landmark, Truck, Warehouse } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
-const heroImages = ['/HERO.png', '/HERO2.png'];
+const heroImages = ['/HERO.png', '/HERO3.png'];
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
