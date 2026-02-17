@@ -38,25 +38,25 @@ export default function Hero() {
         <div className="absolute bottom-1/4 right-[30%] w-8 h-8 bg-white/5 rounded-full animate-bounce-gentle"></div>
 
         {/* Service-related floating icons */}
-        <div className="absolute top-[20%] left-[6%] animate-float opacity-10">
+        <div className="hidden sm:block absolute top-[20%] left-[6%] animate-float opacity-[0.06]">
           <HardHat className="w-10 h-10 text-white" />
         </div>
-        <div className="absolute top-[12%] right-[10%] animate-float-slow opacity-10">
+        <div className="hidden sm:block absolute top-[12%] right-[10%] animate-float-slow opacity-[0.06]">
           <Ship className="w-12 h-12 text-white" />
         </div>
-        <div className="absolute bottom-[25%] left-[12%] animate-float-delayed opacity-10">
+        <div className="hidden sm:block absolute bottom-[25%] left-[12%] animate-float-delayed opacity-[0.06]">
           <Home className="w-9 h-9 text-white" />
         </div>
-        <div className="absolute bottom-[40%] right-[8%] animate-float opacity-10">
+        <div className="hidden sm:block absolute bottom-[40%] right-[8%] animate-float opacity-[0.06]">
           <Landmark className="w-10 h-10 text-white" />
         </div>
-        <div className="absolute top-[55%] left-[4%] animate-float-slow opacity-8">
+        <div className="hidden sm:block absolute top-[55%] left-[4%] animate-float-slow opacity-[0.06]">
           <Truck className="w-8 h-8 text-white" />
         </div>
-        <div className="absolute top-[35%] right-[18%] animate-float-delayed opacity-8">
+        <div className="hidden sm:block absolute top-[35%] right-[18%] animate-float-delayed opacity-[0.06]">
           <Warehouse className="w-9 h-9 text-white" />
         </div>
-        <div className="absolute bottom-[15%] right-[22%] animate-float opacity-8">
+        <div className="hidden sm:block absolute bottom-[15%] right-[22%] animate-float opacity-[0.06]">
           <Briefcase className="w-8 h-8 text-white" />
         </div>
 
@@ -76,7 +76,7 @@ export default function Hero() {
               <span className="text-white/90 text-sm font-semibold">Trusted Investment Partner</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
               <span className={`inline-block transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                 Building value, creating
               </span>
@@ -85,11 +85,11 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className={`text-lg md:text-xl text-white/70 mb-8 leading-relaxed max-w-lg transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <p className={`text-base md:text-xl text-white/70 mb-6 md:mb-8 leading-relaxed max-w-lg transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               and delivering excellence across every venture. We are a diversified investment and development company providing real estate, construction, global trade, and business solutions.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4 mb-8 md:mb-12">
               <button className="group bg-gradient-to-r from-[#992828] to-[#c93030] text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#992828]/30 hover:shadow-xl hover:shadow-[#992828]/50">
                 <span>Start Partnership</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

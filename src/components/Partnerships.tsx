@@ -64,7 +64,7 @@ export default function Partnerships() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 bg-white overflow-hidden"
+      className="relative py-16 md:py-24 bg-white overflow-hidden"
     >
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#2A266A]/5 rounded-full blur-3xl -z-10"></div>
 
@@ -80,7 +80,7 @@ export default function Partnerships() {
               PARTNERSHIP OPPORTUNITIES
             </span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-[#2A266A] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#2A266A] mb-4 md:mb-6">
             Let's Build Profitable
             <span className="block text-[#992828]">Ventures Together</span>
           </h2>
@@ -90,7 +90,7 @@ export default function Partnerships() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-20">
           {partnerTypes.map((partner, index) => (
             <div
               key={index}
@@ -141,7 +141,7 @@ export default function Partnerships() {
               isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
             }`}
           >
-            <h3 className="text-4xl font-bold text-[#2A266A] mb-6">
+            <h3 className="text-2xl md:text-4xl font-bold text-[#2A266A] mb-4 md:mb-6">
               Expand Your Horizons
             </h3>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">

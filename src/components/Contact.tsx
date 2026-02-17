@@ -23,7 +23,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#992828]/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +32,7 @@ export default function Contact() {
             <Mail className="w-4 h-4 text-[#992828]" />
             <span className="text-[#2A266A] text-sm font-semibold">GET IN TOUCH</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-[#2A266A] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#2A266A] mb-4 md:mb-6">
             Ready to Work
             <span className="block text-[#992828]">With Us?</span>
           </h2>

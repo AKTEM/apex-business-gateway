@@ -55,7 +55,7 @@ export default function Testimonials() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 bg-white"
+      className="py-16 md:py-24 bg-white"
       id="testimonials"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,7 +70,7 @@ export default function Testimonials() {
               TESTIMONIALS
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#2A266A] mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2A266A] mb-4">
             Loved by Businesses Worldwide
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">

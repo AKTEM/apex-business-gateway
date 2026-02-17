@@ -64,17 +64,17 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section ref={sectionRef} className="relative py-24 bg-white overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 md:py-24 bg-white overflow-hidden">
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#2A266A]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#992828]/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`text-center mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`text-center mb-12 md:mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="inline-flex items-center space-x-2 bg-[#992828]/10 border border-[#992828]/30 rounded-full px-5 py-2 mb-6">
             <Award className="w-4 h-4 text-[#992828]" />
             <span className="text-[#2A266A] text-sm font-semibold">WHY CHOOSE US</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-[#2A266A] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#2A266A] mb-4 md:mb-6">
             Choosing the Right Partner
             <span className="block text-[#992828]">Critical to Your Success</span>
           </h2>
@@ -83,7 +83,7 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-20">
           {reasons.map((reason, index) => (
             <div key={index} className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${index * 100}ms` }}>
               <div className="group relative h-full">
