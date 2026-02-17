@@ -23,7 +23,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" ref={sectionRef} className="relative py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="services" ref={sectionRef} className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#992828]/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +32,7 @@ export default function Services() {
             <Briefcase className="w-4 h-4 text-[#992828]" />
             <span className="text-[#2A266A] text-sm font-semibold">OUR SERVICES</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-[#2A266A] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#2A266A] mb-4 md:mb-6">
             Comprehensive Solutions Across
             <span className="block text-[#992828]">Multiple Sectors</span>
           </h2>
@@ -41,7 +41,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-20">
           {services.map((service, index) => (
             <div key={index} className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${index * 150}ms` }}>
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] h-full flex flex-col group">

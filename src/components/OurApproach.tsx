@@ -62,12 +62,12 @@ export default function OurApproach() {
   ];
 
   return (
-    <section ref={sectionRef} className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#992828]/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={`text-center mb-20 transform transition-all duration-1000 ${
+          className={`text-center mb-12 md:mb-20 transform transition-all duration-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
@@ -77,7 +77,7 @@ export default function OurApproach() {
               OUR APPROACH
             </span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-[#2A266A] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#2A266A] mb-4 md:mb-6">
             How We Create
             <span className="block text-[#992828]">Lasting Value</span>
           </h2>
@@ -87,7 +87,7 @@ export default function OurApproach() {
           </p>
         </div>
 
-        <div className="relative mb-20">
+        <div className="relative mb-12 md:mb-20">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {approaches.map((approach, index) => (
               <div
@@ -124,7 +124,7 @@ export default function OurApproach() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-12 md:mt-20">
           <div
             className={`transform transition-all duration-1000 delay-300 ${
               isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
@@ -142,7 +142,7 @@ export default function OurApproach() {
               isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
             }`}
           >
-            <h3 className="text-4xl font-bold text-[#2A266A] mb-6">
+            <h3 className="text-2xl md:text-4xl font-bold text-[#2A266A] mb-4 md:mb-6">
               Our Business Philosophy
             </h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">

@@ -24,7 +24,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="about" ref={sectionRef} className="relative py-24 bg-white overflow-hidden">
+    <section id="about" ref={sectionRef} className="relative py-16 md:py-24 bg-white overflow-hidden">
       {/* Floating background elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#992828]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#2A266A]/5 rounded-full blur-3xl"></div>
@@ -33,13 +33,13 @@ export default function AboutUs() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-20">
+        <div className="mb-12 md:mb-20">
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="inline-flex items-center space-x-2 bg-[#2A266A]/10 border border-[#2A266A]/30 rounded-full px-5 py-2 mb-6">
               <Heart className="w-4 h-4 text-[#992828]" />
               <span className="text-[#2A266A] text-sm font-semibold">ABOUT US</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-[#2A266A] mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#2A266A] mb-4 md:mb-6">
               Building Value. Creating Opportunities.
               <span className="block text-[#992828]">Delivering Excellence.</span>
             </h2>
@@ -50,7 +50,7 @@ export default function AboutUs() {
         </div>
 
         {/* Vision & Mission - Enhanced */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-24">
           <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
             <div className="relative group bg-gradient-to-br from-[#2A266A] to-[#3d3585] rounded-2xl p-10 text-white shadow-2xl overflow-hidden h-full">
               {/* Animated bg pattern */}

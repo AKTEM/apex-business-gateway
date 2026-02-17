@@ -6,9 +6,12 @@ import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import OurApproach from './components/OurApproach';
 import Partnerships from './components/Partnerships';
+import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
 import CTASection from './components/CTASection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import RealEstatePage from './pages/RealEstatePage';
 import ConstructionPage from './pages/ConstructionPage';
 import ImportExportPage from './pages/ImportExportPage';
@@ -23,6 +26,8 @@ function HomePage() {
       <WhyChooseUs />
       <OurApproach />
       <Partnerships />
+      <Testimonials />
+      <FAQ />
       <CTASection />
       <div id="contact"><Contact /></div>
       <Footer />
@@ -46,6 +51,7 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-white overflow-hidden">
         <Navbar />
+        <WhatsAppButton />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services/real-estate" element={<ServicePageLayout><RealEstatePage /></ServicePageLayout>} />

@@ -15,7 +15,7 @@ export default function CTASection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 md:py-24 overflow-hidden">
       {/* Background image with low opacity */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -45,7 +45,7 @@ export default function CTASection() {
             <span className="text-white text-sm font-semibold">Take Action Today</span>
           </div>
 
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8 leading-tight">
             Ready to Invest, Build,
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#ff6b6b] to-[#ffa8a8]">
               or Expand Your Business?
