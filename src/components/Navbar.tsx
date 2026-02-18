@@ -52,7 +52,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 group cursor-pointer">
-            <img src="/BUILD-LOGO.png" alt="BuildWell Africa Logo" className="h-12 w-auto object-contain" />
+            <img src="/buildwell-logo.png" alt="BuildWell Africa Logo" className="h-10 md:h-12 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -119,34 +119,41 @@ export default function Navbar() {
           </button>
         </div>
 
+        {/* Mobile menu overlay */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-1 animate-fadeIn bg-white rounded-xl p-4 shadow-lg">
-            <Link to="/" className="block text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">Home</Link>
-            <button onClick={() => scrollToSection('about')} className="block w-full text-left text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">About Us</button>
+          <div className="md:hidden fixed inset-0 top-0 z-40" onClick={() => setMobileMenuOpen(false)}>
+            <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+            <div
+              className="absolute top-0 left-0 h-full w-72 bg-white shadow-2xl animate-slideInLeft p-6 pt-20 space-y-1"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Link to="/" className="block text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">Home</Link>
+              <button onClick={() => scrollToSection('about')} className="block w-full text-left text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">About Us</button>
 
-            <div>
-              <button
-                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="flex items-center justify-between w-full text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50"
-              >
-                <span>Services</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+              <div>
+                <button
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  className="flex items-center justify-between w-full text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50"
+                >
+                  <span>Services</span>
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileServicesOpen && (
+                  <div className="ml-4 space-y-1 mt-1">
+                    {services.map((service) => (
+                      <Link key={service.path} to={service.path} className="block text-[#2A266A] hover:text-[#992828] font-medium py-2 px-3 rounded-lg hover:bg-gray-50 text-sm">
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">Contact</button>
+              <button onClick={() => scrollToSection('contact')} className="w-full bg-gradient-to-r from-[#992828] to-[#c93030] text-white px-6 py-2.5 rounded-full font-semibold mt-4">
+                Get Started
               </button>
-              {mobileServicesOpen && (
-                <div className="ml-4 space-y-1 mt-1">
-                  {services.map((service) => (
-                    <Link key={service.path} to={service.path} className="block text-[#2A266A] hover:text-[#992828] font-medium py-2 px-3 rounded-lg hover:bg-gray-50 text-sm">
-                      {service.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
             </div>
-
-            <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">Contact</button>
-            <button onClick={() => scrollToSection('contact')} className="w-full bg-gradient-to-r from-[#992828] to-[#c93030] text-white px-6 py-2.5 rounded-full font-semibold mt-2">
-              Get Started
-            </button>
           </div>
         )}
       </div>

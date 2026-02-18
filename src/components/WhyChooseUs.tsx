@@ -55,12 +55,12 @@ export default function WhyChooseUs() {
   const years = useCountUp(15, statsVisible);
 
   const reasons = [
-    { icon: Shield, title: 'Legally Registered & Compliant', description: 'Operating with full regulatory compliance and legal standing across all jurisdictions.' },
-    { icon: TrendingUp, title: 'Multi-Sector Expertise', description: 'Proven track record across real estate, construction, trade, and diverse business verticals.' },
-    { icon: Zap, title: 'Professional Project Management', description: 'Disciplined execution, transparent timelines, and consistent delivery on all commitments.' },
-    { icon: Network, title: 'Transparent Transactions', description: 'Clear communication, documented processes, and complete visibility into all operations.' },
-    { icon: Award, title: 'Strong Business Network', description: 'Connected with leading institutions, investors, and industry partners globally.' },
-    { icon: CheckCircle, title: 'Client Satisfaction Commitment', description: 'Dedicated support, personalized service, and long-term partnership focus.' },
+    { icon: Shield, title: 'Legally Registered & Compliant', description: 'Operating with full regulatory compliance and legal standing across all jurisdictions.', image: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=400' },
+    { icon: TrendingUp, title: 'Multi-Sector Expertise', description: 'Proven track record across real estate, construction, trade, and diverse business verticals.', image: 'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=400' },
+    { icon: Zap, title: 'Professional Project Management', description: 'Disciplined execution, transparent timelines, and consistent delivery on all commitments.', image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400' },
+    { icon: Network, title: 'Transparent Transactions', description: 'Clear communication, documented processes, and complete visibility into all operations.', image: 'https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&w=400' },
+    { icon: Award, title: 'Strong Business Network', description: 'Connected with leading institutions, investors, and industry partners globally.', image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400' },
+    { icon: CheckCircle, title: 'Client Satisfaction Commitment', description: 'Dedicated support, personalized service, and long-term partnership focus.', image: 'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400' },
   ];
 
   return (
@@ -88,12 +88,18 @@ export default function WhyChooseUs() {
             <div key={index} className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${index * 100}ms` }}>
               <div className="group relative h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#992828]/5 to-[#2A266A]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative bg-white border-2 border-gray-100 rounded-2xl p-8 h-full hover:border-[#992828] transition-all duration-300 hover:shadow-xl">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#992828] to-[#c93030] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <reason.icon className="w-8 h-8 text-white" />
+                <div className="relative bg-white border-2 border-gray-100 rounded-2xl overflow-hidden h-full hover:border-[#992828] transition-all duration-300 hover:shadow-xl">
+                  <div className="h-40 overflow-hidden">
+                    <img src={reason.image} alt={reason.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-t from-white/80 to-transparent"></div>
                   </div>
-                  <h3 className="text-xl font-bold text-[#2A266A] mb-3">{reason.title}</h3>
-                  <p className="text-gray-700 leading-relaxed">{reason.description}</p>
+                  <div className="p-6 md:p-8 -mt-8 relative z-10">
+                    <div className="w-14 h-14 bg-gradient-to-br from-[#992828] to-[#c93030] rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <reason.icon className="w-7 h-7 text-white" />
+                    </div>
+                    <h3 className="text-lg md:text-xl font-bold text-[#2A266A] mb-3">{reason.title}</h3>
+                    <p className="text-gray-700 leading-relaxed text-sm md:text-base">{reason.description}</p>
+                  </div>
                 </div>
               </div>
             </div>

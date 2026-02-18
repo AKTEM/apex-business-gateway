@@ -52,24 +52,23 @@ export default function AboutUs() {
         {/* Vision & Mission - Enhanced */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-24">
           <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-            <div className="relative group bg-gradient-to-br from-[#2A266A] to-[#3d3585] rounded-2xl p-10 text-white shadow-2xl overflow-hidden h-full">
+            <div className="relative group bg-gradient-to-br from-[#2A266A] to-[#3d3585] rounded-2xl text-white shadow-2xl overflow-hidden h-full">
+              {/* Background image */}
+              <div className="absolute inset-0">
+                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="w-full h-full object-cover opacity-20" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#2A266A]/90 to-[#3d3585]/90"></div>
               {/* Animated bg pattern */}
               <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-              {/* Floating shapes inside */}
               <div className="absolute -top-6 -right-6 w-32 h-32 border-2 border-white/10 rounded-full animate-spin-slow"></div>
-              <div className="absolute bottom-4 right-8 w-16 h-16 border border-white/10 rounded-xl animate-float rotate-45"></div>
-              <div className="absolute top-1/2 right-4 opacity-10 animate-float-delayed">
-                <Sparkles className="w-8 h-8 text-white" />
-              </div>
-              {/* Glow orb */}
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-[#992828]/20 rounded-full blur-3xl"></div>
 
-              <div className="relative z-10">
+              <div className="relative z-10 p-8 md:p-10">
                 <div className="w-16 h-16 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
                   <Eye className="w-8 h-8 text-[#ff6b6b]" />
                 </div>
-                <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
-                <p className="text-lg leading-relaxed text-white/85">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">Our Vision</h3>
+                <p className="text-base md:text-lg leading-relaxed text-white/85">
                   To become a leading multi-sector company recognized for reliability, transparency, and innovation. We aspire to be the trusted partner of choice for investors, businesses, and stakeholders seeking sustainable and profitable growth.
                 </p>
               </div>
@@ -77,24 +76,23 @@ export default function AboutUs() {
           </div>
 
           <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
-            <div className="relative group bg-gradient-to-br from-[#992828] to-[#c93030] rounded-2xl p-10 text-white shadow-2xl overflow-hidden h-full">
+            <div className="relative group bg-gradient-to-br from-[#992828] to-[#c93030] rounded-2xl text-white shadow-2xl overflow-hidden h-full">
+              {/* Background image */}
+              <div className="absolute inset-0">
+                <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="w-full h-full object-cover opacity-20" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#992828]/90 to-[#c93030]/90"></div>
               {/* Animated bg pattern */}
               <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-              {/* Floating shapes inside */}
               <div className="absolute -bottom-6 -left-6 w-32 h-32 border-2 border-white/10 rounded-full animate-spin-reverse"></div>
-              <div className="absolute top-4 left-8 w-16 h-16 border border-white/10 rounded-xl animate-float-slow rotate-12"></div>
-              <div className="absolute bottom-1/3 left-4 opacity-10 animate-float">
-                <TrendingUp className="w-8 h-8 text-white" />
-              </div>
-              {/* Glow orb */}
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#2A266A]/20 rounded-full blur-3xl"></div>
 
-              <div className="relative z-10">
+              <div className="relative z-10 p-8 md:p-10">
                 <div className="w-16 h-16 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
                   <Target className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
-                <p className="text-lg leading-relaxed text-white/85">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">Our Mission</h3>
+                <p className="text-base md:text-lg leading-relaxed text-white/85">
                   To create sustainable value through strategic investments, quality construction, and efficient global trade operations. We are committed to delivering reliable, profitable solutions tailored to individuals, businesses, and investors.
                 </p>
               </div>
@@ -103,8 +101,8 @@ export default function AboutUs() {
         </div>
 
         {/* Core Values */}
-        <div className={`mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: '400ms' }}>
-          <h3 className="text-4xl font-bold text-[#2A266A] mb-12 text-center">Our Core Values</h3>
+        <div className={`mb-16 md:mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: '400ms' }}>
+          <h3 className="text-2xl md:text-4xl font-bold text-[#2A266A] mb-8 md:mb-12 text-center">Our Core Values</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coreValues.map((value, index) => (
               <div key={index} className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${500 + index * 100}ms` }}>
@@ -120,24 +118,27 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Multi-Sector Expertise - Enhanced */}
-        <div className="relative bg-gradient-to-r from-[#2A266A] via-[#3d3585] to-[#2A266A] rounded-2xl p-12 text-white overflow-hidden">
+        {/* Multi-Sector Expertise - Enhanced with image */}
+        <div className="relative bg-gradient-to-r from-[#2A266A] via-[#3d3585] to-[#2A266A] rounded-2xl overflow-hidden">
+          {/* Background image */}
+          <div className="absolute inset-0">
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" className="w-full h-full object-cover opacity-15" />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#2A266A]/90 via-[#3d3585]/85 to-[#2A266A]/90"></div>
           {/* Animated bg elements */}
           <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           <div className="absolute -top-10 -left-10 w-40 h-40 bg-[#992828]/20 rounded-full blur-3xl animate-pulse-soft"></div>
           <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-[#992828]/15 rounded-full blur-3xl animate-pulse-soft animation-delay-2000"></div>
-          <div className="absolute top-6 right-10 animate-float opacity-10"><Globe className="w-12 h-12 text-white" /></div>
-          <div className="absolute bottom-6 left-10 animate-float-slow opacity-10"><Building2 className="w-10 h-10 text-white" /></div>
-          <div className="absolute top-1/2 right-1/4 w-20 h-20 border border-white/10 rounded-full animate-spin-slow"></div>
-          <div className="absolute bottom-1/3 left-1/3 w-12 h-12 border border-white/5 rounded-xl animate-float-delayed rotate-45"></div>
+          <div className="hidden sm:block absolute top-6 right-10 animate-float opacity-[0.06]"><Globe className="w-12 h-12 text-white" /></div>
+          <div className="hidden sm:block absolute bottom-6 left-10 animate-float-slow opacity-[0.06]"><Building2 className="w-10 h-10 text-white" /></div>
 
-          <div className="relative z-10 text-center">
+          <div className="relative z-10 text-center p-8 md:p-12">
             <div className="inline-flex items-center space-x-2 bg-white/10 border border-white/20 rounded-full px-5 py-2 mb-6">
               <Sparkles className="w-4 h-4 text-[#ff6b6b]" />
               <span className="text-white text-sm font-semibold">OUR EXPERTISE</span>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Multi-Sector Expertise</h3>
-            <p className="text-lg leading-relaxed max-w-3xl mx-auto text-white/80">
+            <h3 className="text-2xl md:text-4xl font-bold mb-4 text-white">Multi-Sector Expertise</h3>
+            <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-white/80">
               With a diversified structure and multi-sector expertise, we are positioned to adapt to emerging opportunities across industries while maintaining transparency, efficiency, and accountability in all our operations. Our collaborative approach ensures we deliver measurable, sustainable results.
             </p>
           </div>
