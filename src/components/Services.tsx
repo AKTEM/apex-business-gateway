@@ -63,7 +63,7 @@ export default function Services() {
                       </div>
                     ))}
                   </div>
-                  <Link to={service.path} className="inline-flex items-center space-x-2 text-[#992828] font-semibold hover:text-[#c93030] transition-colors group/btn">
+                  <Link to={service.path} className="inline-flex items-center space-x-2 bg-[#992828] hover:bg-[#c93030] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 group/btn">
                     <span>Learn More</span>
                     <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>

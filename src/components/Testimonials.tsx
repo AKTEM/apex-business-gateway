@@ -24,30 +24,24 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'CEO, TechCorp',
-      image:
-        'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
-      content:
-        'Elevate transformed our business operations completely. The ROI we achieved in just 3 months exceeded all our expectations. Truly remarkable!',
+      name: 'Adebayo Ogundimu',
+      role: 'Property Investor',
+      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
+      content: 'BuildWell Africa helped me secure a prime real estate investment with full transparency. Their professionalism and integrity are unmatched. I highly recommend them.',
       rating: 5,
     },
     {
-      name: 'Michael Chen',
-      role: 'Founder, StartupHub',
-      image:
-        'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
-      content:
-        'The level of innovation and support is unmatched. Our productivity increased by 200% and customer satisfaction is at an all-time high.',
+      name: 'Chioma Nwankwo',
+      role: 'CEO, Trade Connect Ltd',
+      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+      content: 'Their import & export services streamlined our supply chain completely. We saw a 40% reduction in logistics costs and faster delivery times across all channels.',
       rating: 5,
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Director, GlobalTech',
-      image:
-        'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
-      content:
-        'Outstanding platform with incredible features. The team is responsive and the results speak for themselves. Best decision we made this year.',
+      name: 'Samuel Mensah',
+      role: 'Director, Mensah Developments',
+      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
+      content: 'From project planning to delivery, BuildWell Africa\'s construction team exceeded expectations. Quality workmanship, on-time delivery, and transparent communication.',
       rating: 5,
     },
   ];

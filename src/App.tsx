@@ -26,8 +26,8 @@ function HomePage() {
       <WhyChooseUs />
       <OurApproach />
       <Partnerships />
-      <Testimonials />
       <FAQ />
+      <Testimonials />
       <CTASection />
       <div id="contact"><Contact /></div>
       <Footer />

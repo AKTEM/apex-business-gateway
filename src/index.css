@@ -44,6 +44,7 @@
   .animate-slide-right { animation: slideRight 1s ease-out forwards; }
   .animate-bounce-gentle { animation: bounceGentle 2s ease-in-out infinite; }
   .animate-dash { animation: dash 2s ease-in-out infinite; }
+  .animate-slideInLeft { animation: slideInLeft 0.3s ease-out forwards; }
 
   .delay-100 { animation-delay: 100ms; }
   .delay-200 { animation-delay: 200ms; }
@@ -124,6 +125,11 @@
   0% { stroke-dashoffset: 100; }
   50% { stroke-dashoffset: 0; }
   100% { stroke-dashoffset: -100; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
 }
 
 @keyframes moveParticle {

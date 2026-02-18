@@ -100,20 +100,20 @@ export default function Hero() {
               </button>
             </div>
 
-            <div className="grid grid-cols-3 gap-6">
+            <div className="flex flex-wrap gap-3 md:gap-6">
               {[
                 { icon: TrendingUp, label: 'Multi-Sector', sublabel: 'Expertise' },
                 { icon: Target, label: '100%', sublabel: 'Transparency' },
                 { icon: Zap, label: 'Proven', sublabel: 'Track Record' },
               ].map((stat, index) => (
                 <div key={index} className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${700 + index * 150}ms` }}>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg flex items-center justify-center">
-                      <stat.icon className="w-6 h-6 text-[#ff6b6b]" />
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-9 h-9 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <stat.icon className="w-4 h-4 md:w-6 md:h-6 text-[#ff6b6b]" />
                     </div>
                     <div>
-                      <div className="font-bold text-white">{stat.label}</div>
-                      <div className="text-sm text-white/60">{stat.sublabel}</div>
+                      <div className="font-bold text-white text-xs md:text-base">{stat.label}</div>
+                      <div className="text-[10px] md:text-sm text-white/60">{stat.sublabel}</div>
                     </div>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function Hero() {
               <div className="absolute -bottom-4 -left-4 bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-4 animate-float">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-white text-sm font-medium">Active Projects</span>
+                  <span className="text-white text-sm font-medium">Tested & Trusted</span>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-4 animate-float-delayed">
@@ -165,8 +165,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom solid boundary - reduced gradient, more distinct */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white/80 to-transparent"></div>
+      {/* Bottom gradient blend to white */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/70 to-transparent"></div>
     </section>
   );
 }
