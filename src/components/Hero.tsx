@@ -1,4 +1,4 @@
-import { ArrowRight, Play, TrendingUp, Zap, Target, Briefcase, HardHat, Ship, Home, Landmark, Truck, Warehouse } from 'lucide-react';
+import { ArrowRight, Play, Sparkles, Briefcase, HardHat, Ship, Home, Landmark, Truck, Warehouse } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const heroImages = ['/HERO.png', '/HERO3.png'];
@@ -19,7 +19,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[110vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2A266A] via-[#1e1b52] to-[#2A266A] pt-20 md:pt-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2A266A] via-[#1e1b52] to-[#2A266A] pt-20 md:pt-0">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Gradient orbs */}
@@ -72,7 +72,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 mb-8">
-              <Zap className="w-4 h-4 text-[#ff6b6b]" />
+              <Sparkles className="w-4 h-4 text-[#ff6b6b]" />
               <span className="text-white/90 text-sm font-semibold">Trusted Investment Partner</span>
             </div>
 
@@ -89,7 +89,7 @@ export default function Hero() {
               and delivering excellence across every venture. We are a diversified investment and development company providing real estate, construction, global trade, and business solutions.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4 mb-8 md:mb-12">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4">
               <button className="group bg-gradient-to-r from-[#992828] to-[#c93030] text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#992828]/30 hover:shadow-xl hover:shadow-[#992828]/50">
                 <span>Start Partnership</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -98,26 +98,6 @@ export default function Hero() {
                 <Play className="w-5 h-5" />
                 <span>Learn More</span>
               </button>
-            </div>
-
-            <div className="flex flex-wrap gap-3 md:gap-6">
-              {[
-                { icon: TrendingUp, label: 'Multi-Sector', sublabel: 'Expertise' },
-                { icon: Target, label: '100%', sublabel: 'Transparency' },
-                { icon: Zap, label: 'Proven', sublabel: 'Track Record' },
-              ].map((stat, index) => (
-                <div key={index} className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${700 + index * 150}ms` }}>
-                  <div className="flex items-center space-x-2 md:space-x-3">
-                    <div className="w-9 h-9 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <stat.icon className="w-4 h-4 md:w-6 md:h-6 text-[#ff6b6b]" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-white text-xs md:text-base">{stat.label}</div>
-                      <div className="text-[10px] md:text-sm text-white/60">{stat.sublabel}</div>
-                    </div>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
