@@ -24,7 +24,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="about" ref={sectionRef} className="relative py-16 md:py-24 bg-white overflow-hidden">
+    <section id="about" ref={sectionRef} className="relative py-12 md:py-20 bg-white overflow-hidden -mt-16">
       {/* Floating background elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#992828]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#2A266A]/5 rounded-full blur-3xl"></div>
@@ -32,8 +32,27 @@ export default function AboutUs() {
       <div className="absolute bottom-40 left-[5%] animate-float-slow opacity-[0.06]"><Globe className="w-20 h-20 text-[#992828]" /></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Highlights bar */}
+        <div className={`grid grid-cols-3 gap-4 md:gap-8 mb-12 md:mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          {[
+            { icon: TrendingUp, label: 'Multi-Sector', sublabel: 'Expertise' },
+            { icon: Target, label: '100%', sublabel: 'Transparency' },
+            { icon: Zap, label: 'Proven', sublabel: 'Track Record' },
+          ].map((stat, index) => (
+            <div key={index} className="flex items-center justify-center space-x-3 bg-gradient-to-br from-[#2A266A]/5 to-[#992828]/5 border border-[#2A266A]/10 rounded-xl p-4 md:p-6">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-gradient-to-br from-[#992828] to-[#c93030] rounded-lg flex items-center justify-center flex-shrink-0">
+                <stat.icon className="w-5 h-5 md:w-7 md:h-7 text-white" />
+              </div>
+              <div>
+                <div className="font-bold text-[#2A266A] text-sm md:text-lg">{stat.label}</div>
+                <div className="text-xs md:text-sm text-gray-500">{stat.sublabel}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
         {/* Header */}
-        <div className="mb-12 md:mb-20">
+        <div className="mb-12 md:mb-16">
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="inline-flex items-center space-x-2 bg-[#2A266A]/10 border border-[#2A266A]/30 rounded-full px-5 py-2 mb-6">
               <Heart className="w-4 h-4 text-[#992828]" />
