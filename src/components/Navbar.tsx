@@ -120,42 +120,65 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu overlay */}
-        {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 top-0 z-40" onClick={() => setMobileMenuOpen(false)}>
-            <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
-            <div
-              className="absolute top-0 left-0 h-full w-72 bg-white shadow-2xl animate-slideInLeft p-6 pt-20 space-y-1"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Link to="/" className="block text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">Home</Link>
-              <button onClick={() => scrollToSection('about')} className="block w-full text-left text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">About Us</button>
+        <div
+          className={`md:hidden fixed inset-0 z-40 transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          onClick={() => setMobileMenuOpen(false)}
+        >
+          <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+        </div>
+        <div
+          className={`md:hidden fixed top-0 right-0 h-full w-[280px] bg-white/95 backdrop-blur-lg shadow-2xl z-50 transform transition-transform duration-400 ease-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Close button */}
+          <div className="flex justify-end p-5">
+            <button onClick={() => setMobileMenuOpen(false)} className="p-2 rounded-full hover:bg-gray-100 transition-colors">
+              <X className="w-5 h-5 text-[#2A266A]" />
+            </button>
+          </div>
 
-              <div>
-                <button
-                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                  className="flex items-center justify-between w-full text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50"
-                >
-                  <span>Services</span>
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {mobileServicesOpen && (
-                  <div className="ml-4 space-y-1 mt-1">
-                    {services.map((service) => (
-                      <Link key={service.path} to={service.path} className="block text-[#2A266A] hover:text-[#992828] font-medium py-2 px-3 rounded-lg hover:bg-gray-50 text-sm">
-                        {service.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
+          <div className="px-6 space-y-1">
+            <Link to="/" className="block text-[#2A266A] hover:text-[#992828] font-medium py-3 px-4 rounded-xl hover:bg-[#992828]/5 transition-all duration-200">
+              Home
+            </Link>
+            <button onClick={() => scrollToSection('about')} className="block w-full text-left text-[#2A266A] hover:text-[#992828] font-medium py-3 px-4 rounded-xl hover:bg-[#992828]/5 transition-all duration-200">
+              About Us
+            </button>
+
+            <div>
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="flex items-center justify-between w-full text-[#2A266A] hover:text-[#992828] font-medium py-3 px-4 rounded-xl hover:bg-[#992828]/5 transition-all duration-200"
+              >
+                <span>Services</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${mobileServicesOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="ml-3 pl-4 border-l-2 border-[#992828]/20 space-y-1 mt-2 mb-2">
+                  {services.map((service) => (
+                    <Link
+                      key={service.path}
+                      to={service.path}
+                      className="block text-[#2A266A]/80 hover:text-[#992828] font-medium py-2.5 px-3 rounded-lg hover:bg-[#992828]/5 transition-all duration-200 text-sm"
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
+            </div>
 
-              <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-[#2A266A] hover:text-[#992828] font-medium py-3 px-3 rounded-lg hover:bg-gray-50">Contact</button>
-              <button onClick={() => scrollToSection('contact')} className="w-full bg-gradient-to-r from-[#992828] to-[#c93030] text-white px-6 py-2.5 rounded-full font-semibold mt-4">
+            <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-[#2A266A] hover:text-[#992828] font-medium py-3 px-4 rounded-xl hover:bg-[#992828]/5 transition-all duration-200">
+              Contact
+            </button>
+
+            <div className="pt-4">
+              <button onClick={() => scrollToSection('contact')} className="w-full bg-gradient-to-r from-[#992828] to-[#c93030] text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
                 Get Started
               </button>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
