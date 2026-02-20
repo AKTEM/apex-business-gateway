@@ -127,7 +127,7 @@ export default function Navbar() {
           <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
         </div>
         <div
-          className={`md:hidden fixed top-0 right-0 h-full w-[280px] bg-white/95 backdrop-blur-lg shadow-2xl z-50 transform transition-transform duration-400 ease-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          className={`md:hidden fixed top-0 right-0 h-full w-[280px] bg-white shadow-2xl z-50 transform transition-transform duration-400 ease-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close button */}
