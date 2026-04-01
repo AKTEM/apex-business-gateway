@@ -50,6 +50,12 @@ const SubSection = ({ title, intro, items }: { title: string; intro?: string; it
 const TaxationDetail = () => {
   return (
     <div className="min-h-screen relative">
+      <SEOHead
+        title="Taxation & Tax Services"
+        description="Comprehensive taxation and tax management services in Nigeria — Corporate Income Tax, VAT, WHT, PAYE, expatriate tax, tax audits, strategic tax planning, and in-house tax training by Chartered Accountants."
+        path="/services/taxation"
+        keywords="taxation services Nigeria, corporate income tax, VAT compliance, withholding tax, PAYE services, tax planning, tax audit support, expatriate tax, chartered accountants tax"
+      />
       <FloatingIcons />
       <Header />
 
