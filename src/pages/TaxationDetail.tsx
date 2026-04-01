@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingIcons from "@/components/FloatingIcons";
+import SEOHead from "@/components/SEOHead";
 import { Building2, CheckCircle, ArrowLeft } from "lucide-react";
 import serviceTaxation from "@/assets/service-taxation.jpg";
 import taxFederal from "@/assets/tax-federal.jpg";
