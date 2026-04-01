@@ -1,72 +1,67 @@
-import { ArrowRight, Zap, Building2, Globe, TrendingUp } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import ctaBg from "@/assets/cta-bg.jpg";
 
-export default function CTASection() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setIsVisible(true); },
-      { threshold: 0.2 }
-    );
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
+const CTASection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <section ref={sectionRef} className="relative py-16 md:py-24 overflow-hidden">
-      {/* Background image with low opacity */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1200)' }}
-      ></div>
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2A266A]/95 via-[#3d3585]/90 to-[#992828]/90"></div>
+    <section className="py-20 md:py-28 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img src={ctaBg} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
 
-      {/* Animated background elements */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-      <div className="absolute -top-20 -left-20 w-60 h-60 bg-[#992828]/20 rounded-full blur-3xl animate-blob"></div>
-      <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-[#c93030]/15 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+      <div className="container mx-auto px-4 relative z-10">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="text-center max-w-3xl mx-auto"
+        >
+          <motion.span
+            className="inline-block bg-white/50 text-white px-4 py-1.5 rounded-full text-sm font-semibold uppercase tracking-wider mb-6"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 0.2 }}
+          >
+            Ready to Get Started?
+          </motion.span>
 
-      {/* Floating icons */}
-      <div className="absolute top-[15%] left-[8%] animate-float opacity-10"><Building2 className="w-12 h-12 text-white" /></div>
-      <div className="absolute bottom-[20%] right-[10%] animate-float-slow opacity-10"><Globe className="w-14 h-14 text-white" /></div>
-      <div className="absolute top-[60%] left-[80%] animate-float-delayed opacity-10"><TrendingUp className="w-10 h-10 text-white" /></div>
-
-      {/* Geometric shapes */}
-      <div className="absolute top-10 right-[20%] w-24 h-24 border border-white/10 rounded-full animate-spin-slow"></div>
-      <div className="absolute bottom-16 left-[15%] w-16 h-16 border border-white/5 rounded-xl animate-float rotate-45"></div>
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-        <div className={`transform transition-all duration-1000 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
-          <div className="inline-flex items-center space-x-2 bg-white/10 border border-white/30 rounded-full px-5 py-2 mb-8 backdrop-blur-sm">
-            <Zap className="w-4 h-4 text-[#ff6b6b]" />
-            <span className="text-white text-sm font-semibold">Take Action Today</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8 leading-tight">
-            Ready to Invest, Build,
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#ff6b6b] to-[#ffa8a8]">
-              or Expand Your Business?
-            </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+            Take Your Business to the{" "}
+            <span className="text-primary">Next Level</span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Partner with a company committed to excellence, transparency, and long-term growth.
+          <p className="text-muted-foreground text-lg md:text-xl mb-10 leading-relaxed">
+            Partner with Tax Assist Solutions and let our team of expert chartered accountants
+            transform your financial operations. Get a free consultation today.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button className="group bg-white text-[#2A266A] px-10 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
-              <span>Contact Us Today</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="group bg-transparent border-2 border-white/50 text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300">
-              Schedule a Call
-            </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
+              <a
+                href="https://wa.me/2348169005556"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-lg font-semibold text-white flex items-center gap-2 transition-opacity shadow-lg hover:opacity-90"
+                style={{ backgroundColor: "#25D366" }}
+              >
+                <MessageCircle className="w-5 h-5" />
+                Send a DM
+              </a>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
-}
+};
+
+export default CTASection;
