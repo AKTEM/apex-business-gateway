@@ -146,8 +146,27 @@ const ServiceDetail = () => {
 
   const Icon = service.icon;
 
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.description,
+    provider: {
+      "@type": "ProfessionalService",
+      name: "Tax Assist Solutions",
+      url: "https://taxassistsolutions.com",
+    },
+  };
+
   return (
     <div className="min-h-screen relative">
+      <SEOHead
+        title={service.title}
+        description={service.description.slice(0, 155)}
+        path={`/services/${slug}`}
+        keywords={`${service.title}, tax assist solutions, chartered accountants Nigeria, ${service.points.slice(0, 3).join(", ")}`}
+        jsonLd={serviceJsonLd}
+      />
       <FloatingIcons />
       <Header />
 
