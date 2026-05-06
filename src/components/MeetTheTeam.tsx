@@ -9,6 +9,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import adenikePhoto from "@/assets/team-adenike.jpg";
 
 type TeamMember = {
   name: string;
@@ -50,6 +51,7 @@ const team: TeamMember[] = [
     name: "Adenike Oluwafemi",
     credentials: "B.SC, ACA",
     role: "Partner",
+    photo: adenikePhoto,
     preview:
       "Finance, tax, and business advisory professional with deep experience in practice management, regulatory compliance, and client service delivery across the Nigerian regulatory landscape.",
     bio: [
