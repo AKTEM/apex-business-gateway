@@ -16,6 +16,7 @@ const About = () => (
     <FloatingIcons />
     <Header />
     <AboutSection />
+    <MeetTheTeam />
     <Footer />
   </div>
 );
