@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import adenikePhoto from "@/assets/team-adenike.jpg";
+import temitopePhoto from "@/assets/team-temitope.jpg";
 
 type TeamMember = {
   name: string;
@@ -25,6 +26,7 @@ const team: TeamMember[] = [
     name: "Temitope Omotayo",
     credentials: "FCA, MBA, MSc.",
     role: "Partner",
+    photo: temitopePhoto,
     preview:
       "A Fellow of ICAN with 15+ years of leadership in taxation, audit, financial management, and enterprise risk. Former Audit Team Lead at Ernst & Young (EY).",
     bio: [
