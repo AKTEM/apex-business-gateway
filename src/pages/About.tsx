@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import AboutSection from "@/components/AboutSection";
+import MeetTheTeam from "@/components/MeetTheTeam";
 import Footer from "@/components/Footer";
 import FloatingIcons from "@/components/FloatingIcons";
 import SEOHead from "@/components/SEOHead";
@@ -15,6 +16,7 @@ const About = () => (
     <FloatingIcons />
     <Header />
     <AboutSection />
+    <MeetTheTeam />
     <Footer />
   </div>
 );
