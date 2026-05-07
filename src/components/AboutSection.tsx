@@ -68,7 +68,7 @@ const stats = [
   { value: "100+", label: "Clients Served", icon: Users },
   { value: "15+", label: "Years Experience", icon: BarChart3 },
   { value: "98%", label: "Client Satisfaction", icon: PieChart },
-  { value: "50+", label: "Professionals", icon: Award },
+  { value: "10+", label: "Professionals", icon: Award },
 ];
 
 const StatCard = ({ stat, index }: { stat: typeof stats[0]; index: number }) => {
@@ -124,7 +124,9 @@ const AboutSection = () => {
                 About Tax Assist Solutions
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Tax Assist Solutions is a firm of young and dynamic Chartered Accountants focused on providing Accounting, Financial and advisory services to companies in various sectors of the economy. We leverage on our smart approach to delivering quality services as our clients appreciate our professional competence and ability to understand and satisfy the needs of all stakeholders.
+                We are a forward-thinking Tax and Advisory firm based in Nigeria, dedicated to helping businesses navigate complex tax and regulatory requirements with confidence. Our team of highly trained Chartered Accountants, Tax Experts, and experienced professionals provides practical, compliant, and value-driven tax solutions tailored to our clients' needs.
+                <br /><br />
+                With a strong focus on innovation, we leverage Information Technology and Artificial Intelligence (AI) to deliver efficient, accurate, and seamless tax services while providing an exceptional client experience. We are passionate about building long-term relationships founded on trust, professionalism, responsiveness, and measurable results. Our goal is to become a trusted partner to businesses across diverse sectors by delivering top-notch services that combine technical expertise with innovation and exceptional customer experience.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {stats.map((stat, i) => (
@@ -184,7 +186,7 @@ const AboutSection = () => {
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  To be the leading indigenous Accounting Services firm in Africa and beyond.
+                  To build a world-class indigenous Tax and Advisory firm renowned for delivering smart, technology-enabled, and client-focused solutions across Africa and beyond.
                 </p>
               </div>
               <ArrowUpRight className="absolute bottom-4 right-4 w-6 h-6 text-secondary/30 group-hover:text-secondary transition-colors" />
