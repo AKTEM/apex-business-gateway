@@ -5,12 +5,13 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const services = [
-  { label: "Accounting Services", path: "/services/accounting" },
-  { label: "IFRS Services", path: "/services/ifrs" },
-  { label: "Taxation & Tax Services", path: "/services/taxation" },
-  { label: "Management Consultancy", path: "/services/consultancy" },
-  { label: "Financial Advisory", path: "/services/advisory" },
-  { label: "Training & Development", path: "/services/training" },
+  { label: "Business Tax Audit & Investigation", path: "/services/tax-audit-investigation" },
+  { label: "Revenue & Customs Administration", path: "/services/revenue-customs" },
+  { label: "Tax Accounting & Reporting", path: "/services/tax-accounting-reporting" },
+  { label: "Tax Litigation Support", path: "/services/tax-litigation" },
+  { label: "Tax Planning", path: "/services/tax-planning" },
+  { label: "Tax Policy Reform", path: "/services/tax-policy-reform" },
+  { label: "Transaction Tax & Due Diligence", path: "/services/transaction-tax-due-diligence" },
 ];
 
 const navLinks = [
