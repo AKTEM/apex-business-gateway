@@ -40,8 +40,8 @@ const CTASection = () => {
           </h2>
 
           <p className="text-muted-foreground text-lg md:text-xl mb-10 leading-relaxed">
-            Partner with Tax Assist Solutions and let our team of expert chartered accountants
-            transform your financial operations. Get a free consultation today.
+            Partner with Tax Assist Solutions and let our team of chartered accountants and tax
+            experts transform your financial operations. Get a free consultation today.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
