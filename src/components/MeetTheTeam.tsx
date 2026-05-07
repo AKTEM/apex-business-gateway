@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import adenikePhoto from "@/assets/team-adenike.jpg";
 import temitopePhoto from "@/assets/team-temitope.jpg";
+import johnPhoto from "@/assets/team-john.jpg";
 
 type TeamMember = {
   name: string;
@@ -41,6 +42,7 @@ const team: TeamMember[] = [
     name: "John Omoloso",
     credentials: "B.SC, ACA, ACCA",
     role: "Partner",
+    photo: johnPhoto,
     preview:
       "Chartered Accountant and Tax, Mobility & Compensation specialist with cross-industry experience across energy, financial services, telecoms, and FMCG. Started his career with Deloitte.",
     bio: [
