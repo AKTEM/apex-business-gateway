@@ -50,7 +50,7 @@ const services = [
     title: "Revenue & Customs Administration",
     desc: "Revenue collection support, customs duty management, trade compliance advisory, and complete documentation support for cross-border operations.",
     color: "secondary" as const,
-    image: serviceConsultancy,
+    image: serviceRevenueCustoms,
     slug: "revenue-customs",
   },
   {
@@ -58,7 +58,7 @@ const services = [
     title: "Tax Accounting & Reporting",
     desc: "Tax provisioning, return preparation (CIT, VAT, WHT, PAYE), financial statement integration, regulatory and management reporting.",
     color: "primary" as const,
-    image: serviceAccounting,
+    image: serviceTaxConsulting,
     slug: "tax-accounting-reporting",
   },
   {
@@ -66,7 +66,7 @@ const services = [
     title: "Tax Litigation Support",
     desc: "Case assessment, legal representation, dispute resolution, expert testimony, and appeals management for tax controversies.",
     color: "secondary" as const,
-    image: serviceIrs,
+    image: serviceTaxLitigation,
     slug: "tax-litigation",
   },
   {
@@ -74,7 +74,7 @@ const services = [
     title: "Tax Planning",
     desc: "Transaction structuring, incentive utilization, transfer pricing compliance, capital gains and deferred tax management for optimal efficiency.",
     color: "primary" as const,
-    image: serviceAdvisory,
+    image: serviceTaxPlanning,
     slug: "tax-planning",
   },
   {
@@ -82,7 +82,7 @@ const services = [
     title: "Tax Policy Reform",
     desc: "Policy analysis, compliance advisory, strategic planning, advocacy, training, and impact assessment to navigate evolving tax legislation.",
     color: "secondary" as const,
-    image: serviceTraining,
+    image: serviceTaxPolicyReform,
     slug: "tax-policy-reform",
   },
   {
@@ -90,7 +90,7 @@ const services = [
     title: "Transaction Tax & Due Diligence",
     desc: "Tax risk assessment, transaction structuring, compliance verification, documentation review, and tax liability quantification for deals.",
     color: "primary" as const,
-    image: serviceConsultancy,
+    image: serviceTransactionTax,
     slug: "transaction-tax-due-diligence",
   },
 ];
