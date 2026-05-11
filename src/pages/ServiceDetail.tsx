@@ -51,7 +51,7 @@ const serviceData: Record<string, {
   "revenue-customs": {
     title: "Revenue & Customs Administration",
     icon: Ship,
-    image: serviceConsultancy,
+    __TMP__
     description:
       "We help businesses meet revenue and customs obligations efficiently while staying compliant with trade regulations.",
     points: [
@@ -127,7 +127,7 @@ const serviceData: Record<string, {
   "transaction-tax-due-diligence": {
     title: "Transaction Tax & Due Diligence",
     icon: ClipboardCheck,
-    image: serviceConsultancy,
+    __TMP__
     description:
       "Tax-focused due diligence and transaction advisory services that help you understand and mitigate tax exposures in deals.",
     points: [
