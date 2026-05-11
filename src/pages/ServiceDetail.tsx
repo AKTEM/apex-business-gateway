@@ -16,12 +16,13 @@ import {
   ArrowLeft,
 } from "lucide-react";
 
-import serviceAccounting from "@/assets/service-accounting.jpg";
-import serviceIrs from "@/assets/IFRS.jpg";
 import serviceTaxation from "@/assets/service-taxation.jpg";
-import serviceConsultancy from "@/assets/CONSULTING.jpg";
-import serviceAdvisory from "@/assets/service-advisory.jpg";
-import serviceTraining from "@/assets/service-training.jpg";
+import serviceRevenueCustoms from "@/assets/service-revenue-customs.webp";
+import serviceTaxConsulting from "@/assets/service-tax-consulting.jpeg";
+import serviceTaxLitigation from "@/assets/service-tax-litigation.jpeg";
+import serviceTaxPlanning from "@/assets/service-tax-planning.jpg";
+import serviceTaxPolicyReform from "@/assets/service-tax-policy-reform.webp";
+import serviceTransactionTax from "@/assets/service-transaction-tax.webp";
 
 const serviceData: Record<string, {
   title: string;
@@ -50,7 +51,7 @@ const serviceData: Record<string, {
   "revenue-customs": {
     title: "Revenue & Customs Administration",
     icon: Ship,
-    image: serviceConsultancy,
+    image: serviceRevenueCustoms,
     description:
       "We help businesses meet revenue and customs obligations efficiently while staying compliant with trade regulations.",
     points: [
@@ -63,7 +64,7 @@ const serviceData: Record<string, {
   "tax-accounting-reporting": {
     title: "Tax Accounting & Reporting",
     icon: FileBarChart,
-    image: serviceAccounting,
+    image: serviceTaxConsulting,
     description:
       "Accurate tax accounting and reporting services that integrate seamlessly with your financial statements and regulatory obligations.",
     points: [
@@ -78,7 +79,7 @@ const serviceData: Record<string, {
   "tax-litigation": {
     title: "Tax Litigation Support",
     icon: Scale,
-    image: serviceIrs,
+    image: serviceTaxLitigation,
     description:
       "Expert support throughout the tax dispute lifecycle, from initial assessment to appeals and resolution.",
     points: [
@@ -93,7 +94,7 @@ const serviceData: Record<string, {
   "tax-planning": {
     title: "Tax Planning",
     icon: TrendingUp,
-    image: serviceAdvisory,
+    image: serviceTaxPlanning,
     description:
       "Strategic tax planning services that help you structure transactions, optimize tax positions, and unlock available incentives.",
     points: [
@@ -109,7 +110,7 @@ const serviceData: Record<string, {
   "tax-policy-reform": {
     title: "Tax Policy Reform",
     icon: Landmark,
-    image: serviceTraining,
+    image: serviceTaxPolicyReform,
     description:
       "We support businesses and stakeholders in understanding, responding to, and influencing tax policy reforms.",
     points: [
@@ -126,7 +127,7 @@ const serviceData: Record<string, {
   "transaction-tax-due-diligence": {
     title: "Transaction Tax & Due Diligence",
     icon: ClipboardCheck,
-    image: serviceConsultancy,
+    image: serviceTransactionTax,
     description:
       "Tax-focused due diligence and transaction advisory services that help you understand and mitigate tax exposures in deals.",
     points: [

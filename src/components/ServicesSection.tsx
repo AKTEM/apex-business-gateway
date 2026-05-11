@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import servicesBg from "@/assets/services-bg.jpg";
-import serviceAccounting from "@/assets/service-accounting.jpg";
-import serviceIrs from "@/assets/IFRS.jpg";
 import serviceTaxation from "@/assets/service-taxation.jpg";
-import serviceConsultancy from "@/assets/CONSULTING.jpg";
-import serviceAdvisory from "@/assets/service-advisory.jpg";
-import serviceTraining from "@/assets/service-training.jpg";
+import serviceRevenueCustoms from "@/assets/service-revenue-customs.webp";
+import serviceTaxConsulting from "@/assets/service-tax-consulting.jpeg";
+import serviceTaxLitigation from "@/assets/service-tax-litigation.jpeg";
+import serviceTaxPlanning from "@/assets/service-tax-planning.jpg";
+import serviceTaxPolicyReform from "@/assets/service-tax-policy-reform.webp";
+import serviceTransactionTax from "@/assets/service-transaction-tax.webp";
 import {
   Search,
   Ship,
@@ -49,7 +50,7 @@ const services = [
     title: "Revenue & Customs Administration",
     desc: "Revenue collection support, customs duty management, trade compliance advisory, and complete documentation support for cross-border operations.",
     color: "secondary" as const,
-    image: serviceConsultancy,
+    image: serviceRevenueCustoms,
     slug: "revenue-customs",
   },
   {
@@ -57,7 +58,7 @@ const services = [
     title: "Tax Accounting & Reporting",
     desc: "Tax provisioning, return preparation (CIT, VAT, WHT, PAYE), financial statement integration, regulatory and management reporting.",
     color: "primary" as const,
-    image: serviceAccounting,
+    image: serviceTaxConsulting,
     slug: "tax-accounting-reporting",
   },
   {
@@ -65,7 +66,7 @@ const services = [
     title: "Tax Litigation Support",
     desc: "Case assessment, legal representation, dispute resolution, expert testimony, and appeals management for tax controversies.",
     color: "secondary" as const,
-    image: serviceIrs,
+    image: serviceTaxLitigation,
     slug: "tax-litigation",
   },
   {
@@ -73,7 +74,7 @@ const services = [
     title: "Tax Planning",
     desc: "Transaction structuring, incentive utilization, transfer pricing compliance, capital gains and deferred tax management for optimal efficiency.",
     color: "primary" as const,
-    image: serviceAdvisory,
+    image: serviceTaxPlanning,
     slug: "tax-planning",
   },
   {
@@ -81,7 +82,7 @@ const services = [
     title: "Tax Policy Reform",
     desc: "Policy analysis, compliance advisory, strategic planning, advocacy, training, and impact assessment to navigate evolving tax legislation.",
     color: "secondary" as const,
-    image: serviceTraining,
+    image: serviceTaxPolicyReform,
     slug: "tax-policy-reform",
   },
   {
@@ -89,7 +90,7 @@ const services = [
     title: "Transaction Tax & Due Diligence",
     desc: "Tax risk assessment, transaction structuring, compliance verification, documentation review, and tax liability quantification for deals.",
     color: "primary" as const,
-    image: serviceConsultancy,
+    image: serviceTransactionTax,
     slug: "transaction-tax-due-diligence",
   },
 ];
