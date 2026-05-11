@@ -16,12 +16,13 @@ import {
   ArrowLeft,
 } from "lucide-react";
 
-import serviceAccounting from "@/assets/service-accounting.jpg";
-import serviceIrs from "@/assets/IFRS.jpg";
 import serviceTaxation from "@/assets/service-taxation.jpg";
-import serviceConsultancy from "@/assets/CONSULTING.jpg";
-import serviceAdvisory from "@/assets/service-advisory.jpg";
-import serviceTraining from "@/assets/service-training.jpg";
+import serviceRevenueCustoms from "@/assets/service-revenue-customs.webp";
+import serviceTaxConsulting from "@/assets/service-tax-consulting.jpeg";
+import serviceTaxLitigation from "@/assets/service-tax-litigation.jpeg";
+import serviceTaxPlanning from "@/assets/service-tax-planning.jpg";
+import serviceTaxPolicyReform from "@/assets/service-tax-policy-reform.webp";
+import serviceTransactionTax from "@/assets/service-transaction-tax.webp";
 
 const serviceData: Record<string, {
   title: string;
