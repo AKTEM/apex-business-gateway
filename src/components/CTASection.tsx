@@ -1,67 +1,48 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
-import { ArrowRight, Phone, MessageCircle } from "lucide-react";
-import { Link } from "react-router-dom";
-import ctaBg from "@/assets/cta-bg.jpg";
+import { ArrowRight } from 'lucide-react';
 
-const CTASection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
+export default function CTASection() {
+  const scrollToContact = () => {
+    const el = document.querySelector('#contact');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img src={ctaBg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-background/85" />
-      </div>
+    <section className="py-20 lg:py-32 bg-white dark:bg-brand-dark relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="text-center max-w-3xl mx-auto"
-        >
-          <motion.span
-            className="inline-block bg-white/50 text-white px-4 py-1.5 rounded-full text-sm font-semibold uppercase tracking-wider mb-6"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ delay: 0.2 }}
-          >
-            Ready to Get Started?
-          </motion.span>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-3xl">
+          {/* Left Column - Content */}
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-1 w-12 bg-brand-red rounded-full" />
+              <span className="text-sm font-semibold tracking-widest uppercase text-brand-red">Get Started Today</span>
+            </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-            Take Your Business to the{" "}
-            <span className="text-primary">Next Level</span>
-          </h2>
+            <h2 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-8 leading-tight">
+              Ready to Transform Your Logistics?
+            </h2>
 
-          <p className="text-muted-foreground text-lg md:text-xl mb-10 leading-relaxed">
-            Partner with Tax Assist Solutions and let our team of chartered accountants and tax
-            experts transform your financial operations. Get a free consultation today.
-          </p>
+            <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+              Join hundreds of businesses that trust Akilina for their logistics, procurement, and outsourcing needs. Our proven track record of excellence ensures your supply chain is in expert hands.
+            </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <a
-                href="https://wa.me/2348169005556"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 rounded-lg font-semibold text-white flex items-center gap-2 transition-opacity shadow-lg hover:opacity-90"
-                style={{ backgroundColor: "#25D366" }}
-              >
-                <MessageCircle className="w-5 h-5" />
-                Send a DM
-              </a>
-            </motion.div>
+            {/* CTA Button */}
+            <button
+              onClick={scrollToContact}
+              className="inline-flex items-center gap-3 bg-brand-red hover:bg-brand-red-dark text-white font-bold text-lg px-10 py-4 rounded transition-all duration-300 shadow-lg hover:shadow-red-glow group"
+            >
+              <span>Contact Our Team</span>
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            </button>
           </div>
-        </motion.div>
+
+        </div>
+
       </div>
+
     </section>
   );
-};
-
-export default CTASection;
+}

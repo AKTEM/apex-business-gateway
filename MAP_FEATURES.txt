@@ -1,0 +1,96 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    AKILINA WEBSITE - GOOGLE MAPS FEATURES                  ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+INTERACTIVE MAP SECTION - CONTACT PAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ LOCATION: Lagos, Nigeria (Coordinates: 6.5244°N, 3.3792°E)
+✓ MAP SIZE: Full height (h-96 = 384px) with responsive width
+✓ ZOOM LEVEL: 13 (neighborhood view)
+
+INTERACTIVE FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CUSTOM RED MARKER
+   - Location: Centered on Lagos office
+   - Style: Red circle (#C41E3A) with white border
+   - Animation: DROP animation on page load
+   - Click to view: Info window with company details
+
+2. INFO WINDOW
+   - Shows on marker click (auto-opens on load)
+   - Displays: "Akilina Nigeria Limited"
+   - Shows: "Head Office - Lagos, Nigeria"
+   - Professional styling with company colors
+
+3. MAP CONTROLS
+   - Zoom: +/- buttons (scroll wheel enabled)
+   - Pan: Click and drag to move map
+   - Street View: Available in top-right
+   - Map Type: Toggle between Roadmap, Satellite, etc.
+
+4. VISUAL POLISH
+   - Custom map styling (grayscale-ish professional look)
+   - Gradient overlay on map showing operational status
+   - Animated location badge with pulsing pin icon
+   - Status indicators: "OPERATIONAL" (green) & "NATIONWIDE" (red)
+   - Corner accent decorations (red borders)
+
+5. RESPONSIVE DESIGN
+   - Mobile: Stacked badge layout, full-width map
+   - Tablet: Side-by-side badge and status
+   - Desktop: All elements perfectly aligned
+
+ANIMATIONS & INTERACTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+On Hover:
+✓ Map zooms in (scale 110%)
+✓ Brightness increases
+✓ Location badge glows with red shadow
+✓ Border highlights appear
+
+Entrance Animation:
+✓ Location badge slides in from left
+✓ Status badges bounce slightly
+✓ Pin icon pulses continuously
+
+LOGISTICS VIBES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Red and black color scheme (company branding)
+✓ Professional map styling for business context
+✓ Operational status indicators (green checkmark vibes)
+✓ "NATIONWIDE" badge showing coverage
+✓ Clean, modern aesthetic suitable for logistics company
+
+DARK MODE SUPPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Badge styling adapts to light/dark mode
+✓ Backdrop blur and transparency optimized
+✓ Status indicators visible in both modes
+✓ Corner accents subtle in dark mode
+
+SETUP REQUIRED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Before going live, add your Google Maps API key:
+
+1. Get key: https://console.cloud.google.com/
+2. Enable: Maps JavaScript API + Geocoding API
+3. Add to .env file (VITE_GOOGLE_MAPS_API_KEY=...)
+4. Secure with HTTP referrer restrictions
+
+See GOOGLE_MAPS_SETUP.md for detailed instructions.
+
+FILE REFERENCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- MapComponent.tsx         : Core map logic & React component
+- Contact.tsx             : Map integration in contact section
+- .env                    : API key configuration
+- GOOGLE_MAPS_SETUP.md    : Setup instructions
+
+════════════════════════════════════════════════════════════════════════════════

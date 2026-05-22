@@ -1,74 +1,203 @@
-import { ArrowUp } from "lucide-react";
-import { Link } from "react-router-dom";
-import logo from "@/assets/footer-logo.png";
+import { Mail, MapPin, ArrowUpRight, ChevronRight } from 'lucide-react';
+import logoImg from '../assets/Akii2.png';
 
 const quickLinks = [
-  { label: "Home", path: "/" },
-  { label: "About Us", path: "/about" },
-  { label: "Services", path: "/services" },
-  { label: "Testimonials", path: "/testimonials" },
-  { label: "Contact", path: "/contact" },
+  { label: 'Home', href: '#home' },
+  { label: 'About Us', href: '#about' },
+  { label: 'Services', href: '#services' },
+  { label: 'Why Choose Us', href: '#why-us' },
+  { label: 'Careers', href: '#careers' },
+  { label: 'Contact Us', href: '#contact' },
 ];
 
 const serviceLinks = [
-  { label: "Business Tax Audit & Investigation", path: "/services/tax-audit-investigation" },
-  { label: "Revenue & Customs Administration", path: "/services/revenue-customs" },
-  { label: "Tax Accounting & Reporting", path: "/services/tax-accounting-reporting" },
-  { label: "Tax Litigation Support", path: "/services/tax-litigation" },
-  { label: "Tax Planning", path: "/services/tax-planning" },
-  { label: "Transaction Tax & Due Diligence", path: "/services/transaction-tax-due-diligence" },
+  'Logistics Solutions',
+  'Procurement Services',
+  'Import & Export',
+  'Outsourcing Services',
+  'Freight Forwarding',
+  'Customs Clearance',
+  'Haulage Services',
+  'Warehousing',
 ];
 
-const Footer = () => {
+const handleNavClick = (href: string) => {
+  const el = document.querySelector(href);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+};
+
+export default function Footer() {
   return (
-    <footer className="border-t border-border py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-10">
-          <div className="md:col-span-2">
-            <img src={logo} alt="Tax Assist Solutions" className="h-12 mb-4" />
-            <p className="text-muted-foreground leading-relaxed max-w-md">
-              Tax Assist Solutions is a firm of young and dynamic Chartered Accountants focused on providing Accounting, Financial and advisory services to companies in various sectors of the economy.
+    <footer className="bg-brand-black text-gray-400">
+      {/* Top Border with shimmer */}
+      <div className="h-1 bg-gradient-to-r from-transparent via-brand-red to-transparent relative overflow-hidden">
+        <div className="absolute inset-0 shimmer-bg" />
+      </div>
+
+      {/* Main Footer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          {/* Brand Column */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-2 mb-5 group cursor-pointer" onClick={() => handleNavClick('#home')}>
+              <img
+                src={logoImg}
+                alt="Akilina Nigeria Limited"
+                className="h-16 w-auto flex-shrink-0 hover:scale-110 transition-transform duration-300 drop-shadow-lg"
+              />
+              <div className="flex flex-col leading-none">
+                <span className="font-display font-black text-sm text-white">
+                  Akilina
+                </span>
+                <span className="font-display font-bold text-[10px] text-gray-300">
+                  Nigeria Limited
+                </span>
+              </div>
+            </div>
+
+            <p className="text-sm leading-relaxed text-gray-500 mb-5">
+              Delivering professional, reliable, and world-class business solutions
+              across Nigeria and beyond. Anchored on professionalism, driven by
+              passion for excellence.
             </p>
+
+            <div className="text-xs text-gray-600">
+              <span className="text-gray-500 font-medium">RC Number:</span>{' '}
+              <span className="text-gray-400">880162</span>
+            </div>
+
+            <div className="flex items-center gap-2 mt-4">
+              {['L', 'P', 'I&E', 'O'].map((abbr, i) => (
+                <span
+                  key={i}
+                  className="w-8 h-8 bg-brand-dark-2 border border-gray-800 rounded-sm flex items-center justify-center text-[10px] font-bold text-gray-500 hover:border-brand-red/40 hover:text-brand-red-light hover:bg-brand-red/10 hover:shadow-red-glow-sm transition-all duration-300 cursor-default animate-icon-float"
+                  style={{ animationDelay: `${i * 200}ms` }}
+                >
+                  {abbr}
+                </span>
+              ))}
+            </div>
           </div>
+
+          {/* Quick Links */}
           <div>
-            <h4 className="text-foreground font-bold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.path} className="text-muted-foreground hover:text-primary transition-colors">
-                    {link.label}
-                  </Link>
+            <h4 className="font-display font-bold text-white text-sm uppercase tracking-widest mb-5">
+              Quick Links
+            </h4>
+            <ul className="space-y-2.5">
+              {quickLinks.map(({ label, href }) => (
+                <li key={label}>
+                  <button
+                    onClick={() => handleNavClick(href)}
+                    className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-white transition-all duration-200 group"
+                  >
+                    <ChevronRight
+                      size={13}
+                      className="text-brand-red opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-200"
+                    />
+                    {label}
+                  </button>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* Services */}
           <div>
-            <h4 className="text-foreground font-bold mb-4">Services</h4>
-            <ul className="space-y-2">
-              {serviceLinks.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.path} className="text-muted-foreground hover:text-primary transition-colors">
-                    {link.label}
-                  </Link>
+            <h4 className="font-display font-bold text-white text-sm uppercase tracking-widest mb-5">
+              Services
+            </h4>
+            <ul className="space-y-2.5">
+              {serviceLinks.map(service => (
+                <li key={service}>
+                  <button
+                    onClick={() => handleNavClick('#services')}
+                    className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-white transition-all duration-200 group"
+                  >
+                    <ChevronRight
+                      size={13}
+                      className="text-brand-red opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-200"
+                    />
+                    {service}
+                  </button>
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="font-display font-bold text-white text-sm uppercase tracking-widest mb-5">
+              Contact Information
+            </h4>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3 group">
+                <MapPin size={16} className="text-brand-red flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-200 animate-icon-float" />
+                <div>
+                  <div className="text-sm text-gray-300 font-medium">Lagos, Nigeria</div>
+                  <div className="text-xs text-gray-600 mt-0.5">Head Office</div>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 group">
+                <Mail size={16} className="text-brand-red flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-200 animate-icon-float" style={{ animationDelay: '200ms' }} />
+                <div>
+                  <a
+                    href="mailto:info@akilinanigeria.com"
+                    className="text-sm text-gray-300 hover:text-white transition-colors duration-200 block"
+                  >
+                    info@akilinanigeria.com
+                  </a>
+                  <div className="text-xs text-gray-600 mt-0.5">General Enquiries</div>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 group">
+                <Mail size={16} className="text-brand-red flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-200 animate-icon-float" style={{ animationDelay: '400ms' }} />
+                <div>
+                  <a
+                    href="mailto:sales@akilinanigeria.com"
+                    className="text-sm text-gray-300 hover:text-white transition-colors duration-200 block"
+                  >
+                    sales@akilinanigeria.com
+                  </a>
+                  <div className="text-xs text-gray-600 mt-0.5">Business Development</div>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <button
+              onClick={() => handleNavClick('#contact')}
+              className="mt-6 flex items-center gap-2 text-sm font-semibold text-brand-red hover:text-brand-red-light transition-colors duration-200 group"
+            >
+              Get In Touch
+              <ArrowUpRight
+                size={14}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200"
+              />
+            </button>
           </div>
         </div>
-        <div className="border-t border-border pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Tax Assist Solutions. All rights reserved.
-          </p>
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="p-2 rounded-full border border-border hover:border-primary hover:text-primary transition-colors text-muted-foreground"
-          >
-            <ArrowUp className="w-5 h-5" />
-          </button>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p className="text-xs text-gray-600 text-center sm:text-left">
+              &copy; {new Date().getFullYear()} Akilina Nigeria Limited. All Rights Reserved.
+            </p>
+            <div className="flex items-center gap-1 text-xs text-gray-700">
+              <span>Logistics</span>
+              <span className="text-brand-red/60 mx-1">|</span>
+              <span>Procurement</span>
+              <span className="text-brand-red/60 mx-1">|</span>
+              <span>Import & Export</span>
+              <span className="text-brand-red/60 mx-1">|</span>
+              <span>Outsourcing</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
