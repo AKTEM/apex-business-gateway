@@ -48,6 +48,7 @@ export default {
         shimmer: 'shimmer 2s linear infinite',
         'badge-slide': 'badgeSlide 0.5s ease-out forwards',
         'video-fade': 'videoFade 1s ease-out forwards',
+        marquee: 'marquee 28s linear infinite',
       },
       keyframes: {
         fadeUp: {
@@ -126,6 +127,10 @@ export default {
         mapZoom: {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.08)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-33.3333%)' },
         },
       },
     },

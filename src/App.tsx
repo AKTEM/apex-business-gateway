@@ -2,6 +2,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhyChooseAkilina from './components/WhyChooseAkilina';
+import ClientsServed from './components/ClientsServed';
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
@@ -14,6 +15,7 @@ function AppContent() {
       <main>
         <Hero />
         <WhyChooseAkilina />
+        <ClientsServed />
         <About />
         <Services />
         <Contact />

@@ -1,45 +1,54 @@
-# Meet the Team Section
+# Add "Clients We Have Served" Section
 
-Add a new "Meet the Team" subsection at the bottom of the About Us page (just before the Footer), featuring the 3 partners in a polished 3-column card grid that matches the existing premium glass-card aesthetic.
+A new creative, animated section showcasing the sectors Akilina has served, plus a continuously scrolling logo carousel with manual navigation arrows.
 
-## What gets built
+## Placement
+Insert after `<WhyChooseAkilina />` and before `<About />` in `src/App.tsx`.
 
-A new component `src/components/MeetTheTeam.tsx` rendered inside `src/pages/About.tsx` after `<AboutSection />`.
+## Section Structure
 
-### Section structure
-- Eyebrow label: "Our Leadership" (uppercase, primary color, tracked) — matches existing About section style
-- Heading: "Meet the Team"
-- Short intro line: "Experienced partners leading Tax Assist Solutions with deep expertise across tax, audit, and advisory."
-- 3-column responsive grid (1 col on mobile, 2 on tablet, 3 on desktop)
+**1. Header block** (matches existing section style)
+- Red accent bar + uppercase kicker: "Trusted Partners"
+- H2: "Clients We Have Served"
+- Short intro paragraph
 
-### Each team card contains
-- Square portrait placeholder at top (gradient background with a user-silhouette icon, ready for real photos later) with subtle border and rounded corners
-- Name (e.g. "Temitope Omotayo")
-- Credentials line, muted (e.g. "FCA, MBA, MSc.")
-- Role badge ("Partner") using the brand red/blue gradient
-- Short 2–3 line preview bio
-- "Read full profile" button that opens a modal/dialog showing the full bio
+**2. Sector cards** (5 cards in a responsive grid: 1 col mobile → 2 → 3 → 5)
+Each card has a Lucide icon, sector title, and one-line description:
+- Energy & Renewables — Zap icon — solar, power generation, clean energy
+- Chemicals & Additives — FlaskConical icon — industrial chemicals, specialty additives, raw materials
+- Pharmaceuticals — Pill icon — regulated pharma imports, NAFDAC-coordinated clearance
+- Technology & Equipment — Cpu icon — hardware, appliances, industrial equipment
+- Investment & Trading — TrendingUp icon — international commodity and trading firms
 
-### Full-profile dialog
-Uses the existing shadcn `Dialog` component. Shows the larger portrait, name, credentials, role, and the complete bio text the user provided, formatted into readable paragraphs with comfortable line-height. Scrollable on mobile.
+Cards animate in on scroll (using existing `useInView` hook), with brand-red icon glow and hover lift.
 
-### Image placeholders
-Each card uses a placeholder div sized as a 1:1 square (e.g. `aspect-square`) with:
-- Gradient background using existing `--gradient-red-blue` token at low opacity
-- Centered Lucide `User` icon
-- A small caption "Photo coming soon"
+**3. Logo carousel** (the highlight)
+- 5 placeholder client logos in a single horizontal straight-line row
+- Continuous auto-scroll animation (CSS keyframe marquee, ~25s linear infinite loop)
+- Logos duplicated in the track so the loop is seamless
+- Pause on hover
+- Two circular directional arrow buttons (left/right) floating over the rail; clicking nudges the track by one logo width (toggles autoplay off briefly)
+- Subtle gradient fade masks on the left/right edges so logos elegantly fade in/out
+- Each placeholder logo = a clean rounded card with a monogram + faux company name in muted brand-styled typography (no fake real brands)
 
-The component will accept an optional `photo` field per team member so the user can later just drop image imports into the data array — no structural change needed.
+## Visual Treatment
+- Background: light gray / dark `brand-dark-3` to differentiate from neighboring sections
+- Floating soft red blur orb in background corner for depth (consistent with site)
+- Carousel rail: white/dark cards with subtle border, grayscale logos that color up slightly on hover
+- Use existing animation utilities (`fade-up`, `float`, `border-glow`) where natural; add one new `marquee` keyframe in `tailwind.config.js`
 
-### Animation & styling
-- Reuse the `AnimatedCard` reveal pattern from `AboutSection.tsx` (framer-motion fade-up, staggered delay per card)
-- `glass-card` styling, hover lift (`whileHover y: -8`)
-- All colors via semantic tokens (no hardcoded hex)
-- Font: existing Poppins from index.css
+## Files to Create / Edit
 
-## Files
+```text
+src/components/ClientsServed.tsx      NEW — section + sector cards + logo carousel
+src/App.tsx                           edit — mount <ClientsServed /> after WhyChooseAkilina
+tailwind.config.js                    edit — add `marquee` keyframe + animation
+```
 
-- **Create** `src/components/MeetTheTeam.tsx` — the section + dialog
-- **Edit** `src/pages/About.tsx` — import and render `<MeetTheTeam />` between `<AboutSection />` and `<Footer />`
+No backend, no new dependencies (icons via `lucide-react` already used; logos are inline SVG placeholders).
 
-No routing changes, no new dependencies (Dialog and framer-motion already in project).
+## Technical Notes
+- Marquee implemented as a flex track with `animate-marquee` translating `-50%` on X; track contains the logo list rendered twice for seamless looping.
+- Arrows use `useRef` on the track and apply a temporary `transform: translateX(±offset)` with a CSS transition while the marquee animation is paused, then resumes.
+- All colors via existing `brand-*` tokens — no hardcoded hex in the component.
+- Fully responsive; carousel height ~120px, sector cards stack cleanly on mobile.
