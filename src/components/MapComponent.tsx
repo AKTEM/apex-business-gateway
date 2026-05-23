@@ -11,8 +11,8 @@ export default function MapComponent({
   zoom = 13
 }: MapComponentProps) {
   const mapRef = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<google.maps.Map | null>(null);
-  const markerInstance = useRef<google.maps.Marker | null>(null);
+  const mapInstance = useRef<any | null>(null);
+  const markerInstance = useRef<any | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {

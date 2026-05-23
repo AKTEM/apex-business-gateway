@@ -30,7 +30,7 @@ const carouselImages = [
 
 export default function LogisticsCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [, setIsTransitioning] = useState(false);
   const [autoPlay, setAutoPlay] = useState(true);
   const autoPlayRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
