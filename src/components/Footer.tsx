@@ -13,12 +13,19 @@ const quickLinks = [
 ];
 
 
-const handleNavClick = (href: string) => {
-  const el = document.querySelector(href);
-  if (el) el.scrollIntoView({ behavior: 'smooth' });
-};
-
 export default function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (href: string) => {
+    if (location.pathname !== '/') {
+      navigate(`/${href}`);
+      return;
+    }
+    const el = document.querySelector(href);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <footer className="bg-brand-black text-gray-400">
       {/* Top Border with shimmer */}
