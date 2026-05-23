@@ -16,64 +16,6 @@ const services = servicesData.map(s => ({
 }));
 
 
-const services = [
-  {
-    id: 'procurement',
-    title: 'Procurement Services',
-    description: 'International sourcing, supplier identification, purchase management, and quality verification.',
-    icon: ShoppingCart,
-    image: 'https://images.pexels.com/photos/3755766/pexels-photo-3755766.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'freight-forwarding',
-    title: 'Freight Forwarding',
-    description: 'Air and sea freight on all major international trade lanes.',
-    icon: Plane,
-    image: 'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'regulatory-advisory',
-    title: 'Regulatory Advisory',
-    description: 'Expert guidance on import/export compliance, customs documentation, and trade regulations.',
-    icon: Scale,
-    image: 'https://images.pexels.com/photos/4483942/pexels-photo-4483942.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'customs-clearance',
-    title: 'Customs Clearance',
-    description: 'Fast, compliant, penalty-free customs clearance at all major Nigerian ports.',
-    icon: FileCheck,
-    image: 'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'import-export',
-    title: 'Import & Export Management',
-    description: 'Full documentation management, duty computation, and regulatory compliance.',
-    icon: Globe,
-    image: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'haulage',
-    title: 'Haulage Services',
-    description: 'Nationwide container and cargo transportation across Nigeria.',
-    icon: Truck,
-    image: 'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'warehousing',
-    title: 'Warehousing',
-    description: 'Secure, managed storage with inventory tracking and distribution management.',
-    icon: Warehouse,
-    image: 'https://images.pexels.com/photos/616473/pexels-photo-616473.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'outsourcing',
-    title: 'Outsourcing Services',
-    description: 'Embedded logistics and procurement support for dedicated operational capacity.',
-    icon: Users,
-    image: 'https://images.pexels.com/photos/3755766/pexels-photo-3755766.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-];
 
 function ServiceCard({
   service,
