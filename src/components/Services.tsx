@@ -1,69 +1,21 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
-  ArrowRight, ShoppingCart, Plane, FileCheck, Globe,
-  Truck, Warehouse, Users, Scale, Container, CheckCircle,
-  Phone, Zap, Shield
+  ArrowRight, Container, CheckCircle,
+  Phone, Zap, Shield, Globe,
 } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+import { services as servicesData } from '../data/services';
 
-const services = [
-  {
-    id: 'procurement',
-    title: 'Procurement Services',
-    description: 'International sourcing, supplier identification, purchase management, and quality verification.',
-    icon: ShoppingCart,
-    image: 'https://images.pexels.com/photos/3755766/pexels-photo-3755766.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'freight-forwarding',
-    title: 'Freight Forwarding',
-    description: 'Air and sea freight on all major international trade lanes.',
-    icon: Plane,
-    image: 'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'regulatory-advisory',
-    title: 'Regulatory Advisory',
-    description: 'Expert guidance on import/export compliance, customs documentation, and trade regulations.',
-    icon: Scale,
-    image: 'https://images.pexels.com/photos/4483942/pexels-photo-4483942.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'customs-clearance',
-    title: 'Customs Clearance',
-    description: 'Fast, compliant, penalty-free customs clearance at all major Nigerian ports.',
-    icon: FileCheck,
-    image: 'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'import-export',
-    title: 'Import & Export Management',
-    description: 'Full documentation management, duty computation, and regulatory compliance.',
-    icon: Globe,
-    image: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'haulage',
-    title: 'Haulage Services',
-    description: 'Nationwide container and cargo transportation across Nigeria.',
-    icon: Truck,
-    image: 'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'warehousing',
-    title: 'Warehousing',
-    description: 'Secure, managed storage with inventory tracking and distribution management.',
-    icon: Warehouse,
-    image: 'https://images.pexels.com/photos/616473/pexels-photo-616473.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 'outsourcing',
-    title: 'Outsourcing Services',
-    description: 'Embedded logistics and procurement support for dedicated operational capacity.',
-    icon: Users,
-    image: 'https://images.pexels.com/photos/3755766/pexels-photo-3755766.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-];
+const services = servicesData.map(s => ({
+  id: s.slug,
+  title: s.title,
+  description: s.cardDescription,
+  icon: s.icon,
+  image: s.cardImage,
+}));
+
+
 
 function ServiceCard({
   service,
@@ -117,21 +69,21 @@ function ServiceCard({
           </div>
         </div>
 
-        {/* Icon badge — fully visible, positioned below image */}
+        {/* Icon badge — permanent red gradient, white icon */}
         <div className="relative px-6 -mt-7 z-10">
           <div
             className="w-14 h-14 rounded-sm flex items-center justify-center border-4 border-white dark:border-brand-dark transition-all duration-500"
             style={{
-              background: hovered
-                ? 'linear-gradient(135deg, #C41E3A, #8B0000)'
-                : 'rgba(196,30,58,0.08)',
-              boxShadow: hovered ? '0 8px 24px rgba(196,30,58,0.4)' : '0 4px 12px rgba(0,0,0,0.1)',
+              background: 'linear-gradient(135deg, #C41E3A, #8B0000)',
+              boxShadow: hovered
+                ? '0 10px 28px rgba(196,30,58,0.5)'
+                : '0 4px 14px rgba(196,30,58,0.25)',
+              transform: hovered ? 'scale(1.06)' : 'scale(1)',
             }}
           >
             <Icon
               size={24}
-              className="transition-colors duration-500 animate-icon-float"
-              style={{ color: hovered ? '#ffffff' : '#C41E3A' }}
+              className="text-white animate-icon-float"
             />
           </div>
         </div>
@@ -148,19 +100,17 @@ function ServiceCard({
             {service.description}
           </p>
 
-          {/* Normal Learn More button */}
+          {/* Learn More — links to service page */}
           <div className="mt-auto">
-            <button
-              onClick={() => {
-                const el = document.querySelector('#contact');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
+            <Link
+              to={`/services/${service.id}`}
               className="w-full inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-red-deep text-white font-semibold text-sm px-6 py-3 rounded-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
             >
               <span>Learn More</span>
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
+            </Link>
           </div>
+
         </div>
       </div>
     </div>
