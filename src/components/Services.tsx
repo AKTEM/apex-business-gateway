@@ -1,10 +1,20 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
-  ArrowRight, ShoppingCart, Plane, FileCheck, Globe,
-  Truck, Warehouse, Users, Scale, Container, CheckCircle,
-  Phone, Zap, Shield
+  ArrowRight, Container, CheckCircle,
+  Phone, Zap, Shield, Globe,
 } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+import { services as servicesData } from '../data/services';
+
+const services = servicesData.map(s => ({
+  id: s.slug,
+  title: s.title,
+  description: s.cardDescription,
+  icon: s.icon,
+  image: s.cardImage,
+}));
+
 
 const services = [
   {
