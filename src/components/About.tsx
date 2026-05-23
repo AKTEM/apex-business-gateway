@@ -1,8 +1,8 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import {
   ArrowRight, CheckCircle, Shield, Target, Eye, Heart, Zap,
-  Award, MapPin, Anchor, Truck, Globe, FileCheck, Users,
-  TrendingUp, Building2, Scale, Handshake, Clock
+  Award, MapPin, Anchor, Truck, Globe, FileCheck,
+  TrendingUp, Building2, Scale, Handshake
 } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import logisticsImage from '../assets/transportation-logistics_37416-165.jpeg';
@@ -70,10 +70,6 @@ export default function About() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToContact = () => {
-    const el = document.querySelector('#contact');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
 
   const scrollToServices = () => {
     const el = document.querySelector('#services');

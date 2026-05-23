@@ -178,7 +178,7 @@ export default function WhyChooseAkilina() {
   const { ref, inView } = useInView(0.05);
   const { ref: cardsRef, inView: cardsInView } = useInView(0.05);
   const { ref: ctaRef, inView: ctaInView } = useInView(0.1);
-  const bgRef = useRef<HTMLDivElement>(null);
+  const bgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
