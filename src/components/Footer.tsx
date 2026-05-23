@@ -1,5 +1,7 @@
 import { Mail, MapPin, ArrowUpRight, ChevronRight } from 'lucide-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logoImg from '../assets/Akii2.png';
+import { services } from '../data/services';
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
@@ -10,16 +12,6 @@ const quickLinks = [
   { label: 'Contact Us', href: '#contact' },
 ];
 
-const serviceLinks = [
-  'Logistics Solutions',
-  'Procurement Services',
-  'Import & Export',
-  'Outsourcing Services',
-  'Freight Forwarding',
-  'Customs Clearance',
-  'Haulage Services',
-  'Warehousing',
-];
 
 const handleNavClick = (href: string) => {
   const el = document.querySelector(href);
