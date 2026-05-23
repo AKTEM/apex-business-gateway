@@ -107,20 +107,21 @@ export default function Footer() {
               Services
             </h4>
             <ul className="space-y-2.5">
-              {serviceLinks.map(service => (
-                <li key={service}>
-                  <button
-                    onClick={() => handleNavClick('#services')}
+              {services.map(s => (
+                <li key={s.slug}>
+                  <Link
+                    to={`/services/${s.slug}`}
                     className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-white transition-all duration-200 group"
                   >
                     <ChevronRight
                       size={13}
                       className="text-brand-red opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-200"
                     />
-                    {service}
-                  </button>
+                    {s.shortTitle}
+                  </Link>
                 </li>
               ))}
+
             </ul>
           </div>
 
