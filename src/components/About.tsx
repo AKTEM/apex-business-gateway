@@ -266,7 +266,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Mission — medium card with image */}
+            {/* Mission — medium card */}
             <div
               className="relative group md:mt-8"
               style={{
@@ -278,18 +278,8 @@ export default function About() {
               <div className="relative overflow-hidden rounded-sm bg-white dark:bg-brand-dark border border-gray-100 dark:border-gray-800 h-full transition-all duration-500 hover:shadow-xl hover:border-brand-red/30">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-red to-brand-red-light scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
 
-                {/* Image header */}
-                <div className="relative h-40 overflow-hidden">
-                  <img
-                    src="https://images.pexels.com/photos/3755766/pexels-photo-3755766.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Mission"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-brand-dark via-transparent to-transparent" />
-                </div>
-
                 <div className="p-8">
-                  <div className="w-14 h-14 rounded-sm bg-brand-red/8 flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:shadow-red-glow-sm transition-all duration-500 -mt-14 relative z-10 border-4 border-white dark:border-brand-dark">
+                  <div className="w-14 h-14 rounded-sm bg-brand-red/8 flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:shadow-red-glow-sm transition-all duration-500">
                     <Target size={24} className="text-brand-red group-hover:text-white transition-colors duration-500 animate-icon-float" />
                   </div>
 

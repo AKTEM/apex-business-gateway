@@ -7,10 +7,8 @@ import { services } from '../data/services';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
+  { label: 'About Us', href: '#about' },
   { label: 'Services', href: '#services', hasServicesMenu: true },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Careers', href: '#careers' },
   { label: 'Contact', href: '#contact' },
 ];
 
