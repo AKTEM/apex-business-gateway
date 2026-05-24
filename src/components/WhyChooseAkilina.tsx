@@ -341,17 +341,17 @@ export default function WhyChooseAkilina() {
                     <h3 className="font-display font-bold text-lg text-gray-900 dark:text-white group-hover:text-brand-red transition-colors duration-300 animate-pop-out">
                       Speed When It Matters
                     </h3>
-                    {/* Flashing "100% Committed" badge */}
-                    <span className="px-2 py-0.5 bg-brand-red/10 text-brand-red text-[10px] font-bold uppercase tracking-widest rounded-full animate-flash">
-                      100% Committed
-                    </span>
                   </div>
-                  {/* Fast marquee-scrolling description */}
+                  {/* Slow readable scrolling description */}
                   <div className="overflow-hidden relative">
-                    <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl animate-marquee-fast whitespace-nowrap">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl animate-marquee-slow whitespace-nowrap">
                       We understand that missed delivery windows cost money. Our team is built around urgency — not just procedures.
                     </p>
                   </div>
+                  {/* Flashing "100% Committed" badge below text */}
+                  <span className="inline-block mt-2 px-2 py-0.5 bg-brand-red/10 text-brand-red text-[10px] font-bold uppercase tracking-widest rounded-full animate-flash">
+                    100% Committed
+                  </span>
                 </div>
 
                 {/* Right stats — flashing attention-grabbers */}
