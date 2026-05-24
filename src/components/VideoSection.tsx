@@ -107,18 +107,7 @@ export default function VideoSection() {
               playsInline
               poster="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1280"
             >
-              <source
-                src="https://videos.pexels.com/video-files/4506122/4506122-sd_640_360_25fps.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://videos.pexels.com/video-files/19821/19821-sd_640_360_25fps.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://videos.pexels.com/video-files/854395/854395-sd_640_360_30fps.mp4"
-                type="video/mp4"
-              />
+              <source src="/videos/akilina-showcase.mp4" type="video/mp4" />
             </video>
 
             {/* Gradient overlay */}
