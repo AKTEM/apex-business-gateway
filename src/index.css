@@ -365,15 +365,15 @@
     animation: flashPulse 1.5s ease-in-out infinite;
   }
 
-  /* Fast marquee scroll from side */
-  @keyframes marqueeFast {
-    0% { transform: translateX(100%); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateX(-100%); opacity: 0; }
+  /* Slow readable marquee scroll */
+  @keyframes marqueeSlow {
+    0% { transform: translateX(60%); opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { transform: translateX(-60%); opacity: 0; }
   }
-  .animate-marquee-fast {
-    animation: marqueeFast 4s linear infinite;
+  .animate-marquee-slow {
+    animation: marqueeSlow 12s ease-in-out infinite;
   }
 
   /* Icon float animation */
