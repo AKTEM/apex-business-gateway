@@ -31,9 +31,9 @@ export const services: ServiceData[] = [
       'International sourcing, supplier identification, purchase management, and quality verification.',
     icon: ShoppingCart,
     heroImage:
-      'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://emedia1.nhs.wales/NWSSP/cache/file/B3BA2208-F772-4311-BA41FC6DAAA4031C_carouselimage.png',
     cardImage:
-      'https://images.pexels.com/photos/3755766/pexels-photo-3755766.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://www.kilgore.edu/wp-content/uploads/2025/03/procurement-art-for-web-copy-1536x1010.webp',
     intro: [
       "Akilina's procurement services give Nigerian enterprises access to a managed global sourcing capability — reducing vendor risk, controlling costs, and protecting quality at every stage of the purchase cycle.",
       "Our procurement service is built around prevention. We manage the full procurement cycle from identifying and verifying suppliers, through purchase order execution and pre-shipment quality verification, to import documentation preparation and freight coordination. By the time your cargo reaches the Nigerian border, every document is correct, every classification is accurate, and every duty liability has been calculated in advance.",
@@ -85,7 +85,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://bafcointl.com/wp-content/uploads/2024/08/freight-forwarding-company-in-saudi-arabia-1.jpg',
     intro: [
       'Akilina Nigeria Limited is your freight forwarding partner for cargo movement on all major international trade lanes — Asia, Europe, the Americas, and across Africa. We manage the booking, the documentation, and the cargo so you can manage your business.',
     ],
@@ -129,9 +129,9 @@ export const services: ServiceData[] = [
       'Expert guidance on import/export compliance, customs documentation, and trade regulations.',
     icon: Scale,
     heroImage:
-      'https://images.pexels.com/photos/4483942/pexels-photo-4483942.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://balguerie.com/images/balguerie/Actualites/logistique-internationale-nov-21.jpg',
     cardImage:
-      'https://images.pexels.com/photos/4483942/pexels-photo-4483942.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://cdn.prod.website-files.com/6357bf78dc4745619d359b6e/6453ab61088440e65867cdd8_Supporting%20Wealth%20Managers%20with%20regulatory%20requirements.jpg',
     intro: [
       "Our Regulatory Advisory service helps businesses navigate Nigeria's complex trade environment with expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements.",
     ],
@@ -204,7 +204,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://renamyglobal.com/wp-content/uploads/2025/11/export-consultants3.jpg',
     intro: [
       'Akilina Nigeria Limited manages the full regulatory lifecycle of every import and export transaction — documentation, duty management, agency coordination, and compliance — so your trade flows without interruption.',
     ],
@@ -241,7 +241,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://i0.wp.com/www.ronishlogistics.com/wp-content/uploads/2025/07/Haulage-Companies-in-Lagos.jpg?fit=1200%2C800&ssl=1',
     intro: [
       'Akilina brings deep knowledge of Lagos roads and routes, built through direct operational experience in the transport and haulage sector. We run documented procedures, driver briefings, and route coordination to ensure every container that moves under our management is accounted for at every stage of the journey.',
       "From container release at the port to delivery at your facility — Akilina's haulage service manages every kilometre of the journey with documented procedures, driver accountability, and real-time cargo updates.",
@@ -276,7 +276,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://images.pexels.com/photos/616473/pexels-photo-616473.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://wellpack.org/wp-content/uploads/2021/10/Warehousing-and-Fulfillment-06.jpg',
     intro: [
       'Akilina provides secure, managed warehousing with inventory tracking, distribution management, and fully documented receipt and dispatch processes — giving your goods a controlled environment between port and destination.',
     ],
@@ -308,7 +308,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://images.pexels.com/photos/3755766/pexels-photo-3755766.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://img.magnific.com/free-photo/firm-handshake_1098-16548.jpg?semt=ais_hybrid&w=740&q=80',
     intro: [
       "Akilina's outsourcing service embeds experienced logistics and procurement professionals within your operation — giving you the capability of a fully staffed supply chain team.",
       'Building an in-house logistics and procurement team is expensive. A Customs clearance expert, a procurement manager, a haulage coordinator, and a documentation specialist — each with the market experience to perform at enterprise level — represents a significant payroll commitment for a function that is not your core business.',

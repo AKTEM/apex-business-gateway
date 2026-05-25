@@ -259,7 +259,7 @@ export default function WhyChooseAkilina() {
             >
               <div className="relative rounded-sm overflow-hidden h-full min-h-[340px] group">
                 <img
-                  src="https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://img.freepik.com/premium-photo/logistics-import-export-cargo-transportation-industry-concept-delivery-cargo-trucks-driving_1149930-2336.jpg?semt=ais_hybrid&w=740&q=80"
                   alt="Logistics operations"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
