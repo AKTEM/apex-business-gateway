@@ -276,7 +276,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://wellpack.org/wp-content/uploads/2021/10/Warehousing-and-Fulfillment-06.jpg',
+      'https://img.freepik.com/free-photo/photorealistic-scene-with-warehouse-logistics-operations_23-2151468808.jpg?semt=ais_hybrid&w=740&q=80',
     intro: [
       'Akilina provides secure, managed warehousing with inventory tracking, distribution management, and fully documented receipt and dispatch processes — giving your goods a controlled environment between port and destination.',
     ],
