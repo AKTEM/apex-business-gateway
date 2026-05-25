@@ -52,7 +52,7 @@ function ServiceCard({
           style={{ transform: hovered ? 'scaleX(1)' : 'scaleX(0)' }}
         />
 
-        {/* Image header — taller, no white overlay */}
+        {/* Image header - taller, no white overlay */}
         <div className="relative h-48 overflow-hidden">
           <img
             src={service.image}
@@ -60,7 +60,7 @@ function ServiceCard({
             className="w-full h-full object-cover transition-transform duration-700"
             style={{ transform: hovered ? 'scale(1.08)' : 'scale(1)' }}
           />
-          {/* Subtle bottom-only gradient for text readability — no white wash */}
+          {/* Subtle bottom-only gradient for text readability - no white wash */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
           {/* Service number */}
@@ -69,7 +69,7 @@ function ServiceCard({
           </div>
         </div>
 
-        {/* Icon badge — permanent red gradient, white icon */}
+        {/* Icon badge - permanent red gradient, white icon */}
         <div className="relative px-6 -mt-7 z-10">
           <div
             className="w-14 h-14 rounded-sm flex items-center justify-center border-4 border-white dark:border-brand-dark transition-all duration-500"
@@ -100,7 +100,7 @@ function ServiceCard({
             {service.description}
           </p>
 
-          {/* Learn More — links to service page */}
+          {/* Learn More - links to service page */}
           <div className="mt-auto">
             <Link
               to={`/services/${service.id}`}
@@ -147,14 +147,14 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Services Grid — 4 columns with equal height cards */}
+        {/* Services Grid - 4 columns with equal height cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => (
             <ServiceCard key={service.id} service={service} index={i} inView={inView} />
           ))}
         </div>
 
-        {/* CTA Section — Professional illustrative design */}
+        {/* CTA Section - Professional illustrative design */}
         <div
           ref={ctaRef as React.RefObject<HTMLDivElement>}
           className="mt-20 relative overflow-hidden rounded-sm"

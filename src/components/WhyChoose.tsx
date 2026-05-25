@@ -40,7 +40,7 @@ const reasons = [
   {
     icon: Clock,
     title: 'Timely Delivery',
-    desc: 'We deliver on time without compromising quality — every project completed within scope, time, and budget.',
+    desc: 'We deliver on time without compromising quality - every project completed within scope, time, and budget.',
   },
   {
     icon: TrendingDown,

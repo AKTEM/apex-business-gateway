@@ -80,7 +80,7 @@ export default function About() {
     <section id="about" className="bg-white dark:bg-brand-dark transition-colors duration-300">
 
       {/* ════════════════════════════════════════════
-          SECTION 1: OUR STORY — Diagonal Split Layout
+          SECTION 1: OUR STORY - Diagonal Split Layout
           ════════════════════════════════════════════ */}
       <div className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none"
@@ -208,7 +208,7 @@ export default function About() {
       </div>
 
       {/* ════════════════════════════════════════════
-          SECTION 2: VISION / MISSION / ACCOUNTABILITY — Staggered Cards
+          SECTION 2: VISION / MISSION / ACCOUNTABILITY - Staggered Cards
           ════════════════════════════════════════════ */}
       <div className="relative py-20 lg:py-28 bg-gray-50 dark:bg-brand-dark-2 overflow-hidden transition-colors duration-300">
         <div
@@ -237,7 +237,7 @@ export default function About() {
 
           {/* Staggered 3-card layout with different heights */}
           <div className="grid md:grid-cols-3 gap-6 items-start">
-            {/* Vision — tallest card */}
+            {/* Vision - tallest card */}
             <div
               className="relative group"
               style={{
@@ -257,7 +257,7 @@ export default function About() {
                   Our Vision
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                  To be the benchmark for procurement and logistics excellence in Nigeria — the first choice supply chain partner for Nigerian and international enterprise clients.
+                  To be the benchmark for procurement and logistics excellence in Nigeria - the first choice supply chain partner for Nigerian and international enterprise clients.
                 </p>
 
                 <div className="absolute bottom-4 right-4 font-display font-black text-6xl text-brand-red/[0.03] leading-none pointer-events-none">
@@ -266,7 +266,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Mission — medium card */}
+            {/* Mission - medium card */}
             <div
               className="relative group md:mt-8"
               style={{
@@ -287,7 +287,7 @@ export default function About() {
                     Our Mission
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                    To provide high-standard logistics and procurement solutions that serve as the vanguard of enterprise supply chain support in Nigeria — ensuring that the operational needs of our clients are not just met, but consistently exceeded.
+                    To provide high-standard logistics and procurement solutions that serve as the vanguard of enterprise supply chain support in Nigeria - ensuring that the operational needs of our clients are not just met, but consistently exceeded.
                   </p>
                 </div>
 
@@ -297,7 +297,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Accountability — offset red card */}
+            {/* Accountability - offset red card */}
             <div
               className="relative group md:mt-16"
               style={{
@@ -315,7 +315,7 @@ export default function About() {
                   Built on Accountability. Grown on Trust.
                 </h3>
                 <p className="text-sm text-white/80 leading-relaxed">
-                  Akilina Nigeria Limited is a procurement and logistics company built for Nigerian enterprise — combining local market mastery with the operational standards that global trade demands.
+                  Akilina Nigeria Limited is a procurement and logistics company built for Nigerian enterprise - combining local market mastery with the operational standards that global trade demands.
                 </p>
 
                 <div className="absolute top-4 right-4 w-6 h-6 border-r border-t border-white/20" />
@@ -330,7 +330,7 @@ export default function About() {
       </div>
 
       {/* ════════════════════════════════════════════
-          SECTION 3: CORE VALUES — Pyramid Layout
+          SECTION 3: CORE VALUES - Pyramid Layout
           ════════════════════════════════════════════ */}
       <div className="relative py-20 lg:py-28 bg-white dark:bg-brand-dark overflow-hidden transition-colors duration-300">
         <div className="absolute top-1/4 left-0 w-80 h-80 rounded-full pointer-events-none"
@@ -468,7 +468,7 @@ export default function About() {
       </div>
 
       {/* ════════════════════════════════════════════
-          SECTION 4: CREDENTIALS & REACH — Split with Image Grid
+          SECTION 4: CREDENTIALS & REACH - Split with Image Grid
           ════════════════════════════════════════════ */}
       <div className="relative py-20 lg:py-28 bg-gray-50 dark:bg-brand-dark-2 overflow-hidden transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -536,7 +536,7 @@ export default function About() {
                 Nationwide <span className="text-gradient-red">Coverage</span>
               </h3>
               <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
-                Akilina operates wherever your supply chain demands — from the Lagos port complex at Apapa and Tin Can Island to Onne in Rivers State, from Abuja to Port Harcourt, and across Nigeria's major inland commercial destinations.
+                Akilina operates wherever your supply chain demands - from the Lagos port complex at Apapa and Tin Can Island to Onne in Rivers State, from Abuja to Port Harcourt, and across Nigeria's major inland commercial destinations.
               </p>
 
               {/* Image mosaic */}

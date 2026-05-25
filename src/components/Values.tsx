@@ -5,12 +5,12 @@ const values = [
   {
     icon: Shield,
     title: 'Integrity',
-    body: 'Our foremost standard of conduct. Our word is our bond — we uphold transparency and honesty in every engagement.',
+    body: 'Our foremost standard of conduct. Our word is our bond - we uphold transparency and honesty in every engagement.',
   },
   {
     icon: Star,
     title: 'Excellence',
-    body: 'Nothing else satisfies but excellence. Being the best at what we do is not an option — it is our obligation.',
+    body: 'Nothing else satisfies but excellence. Being the best at what we do is not an option - it is our obligation.',
   },
   {
     icon: Lightbulb,
@@ -20,7 +20,7 @@ const values = [
   {
     icon: BookOpen,
     title: 'Learning',
-    body: 'At the center of our culture is continuous learning — growing our knowledge to better serve our clients.',
+    body: 'At the center of our culture is continuous learning - growing our knowledge to better serve our clients.',
   },
   {
     icon: Globe,
@@ -30,7 +30,7 @@ const values = [
   {
     icon: Heart,
     title: 'Citizenship',
-    body: 'Our commitment to the communities in which we work and live goes beyond business — it is a calling.',
+    body: 'Our commitment to the communities in which we work and live goes beyond business - it is a calling.',
   },
 ];
 
@@ -55,7 +55,7 @@ export default function Values() {
             What We Stand For
           </h2>
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl">
-            Our core values are the foundation of everything we do — guiding every decision,
+            Our core values are the foundation of everything we do - guiding every decision,
             every interaction, and every service we deliver.
           </p>
         </div>

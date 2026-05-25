@@ -42,7 +42,7 @@ const reasons = [
   {
     icon: Zap,
     title: 'Speed When It Matters',
-    description: 'We understand that missed delivery windows cost money. Our team is built around urgency — not just procedures.',
+    description: 'We understand that missed delivery windows cost money. Our team is built around urgency - not just procedures.',
     accent: '#C41E3A',
     stat: '100%',
     statSub: 'Committed',
@@ -303,7 +303,7 @@ export default function WhyChooseAkilina() {
             </div>
           </div>
 
-          {/* Fifth card — "Speed When It Matters" with special animations */}
+          {/* Fifth card - "Speed When It Matters" with special animations */}
           <div
             className="mt-5"
             style={{
@@ -345,7 +345,7 @@ export default function WhyChooseAkilina() {
                   {/* Slow readable scrolling description */}
                   <div className="overflow-hidden relative">
                     <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl animate-marquee-slow whitespace-nowrap">
-                      We understand that missed delivery windows cost money. Our team is built around urgency — not just procedures.
+                      We understand that missed delivery windows cost money. Our team is built around urgency - not just procedures.
                     </p>
                   </div>
                   {/* Flashing "100% Committed" badge below text */}
@@ -354,7 +354,7 @@ export default function WhyChooseAkilina() {
                   </span>
                 </div>
 
-                {/* Right stats — flashing attention-grabbers */}
+                {/* Right stats - flashing attention-grabbers */}
                 <div className="flex-shrink-0 flex gap-4">
                   <div className="text-center px-4 py-3 bg-gray-50 dark:bg-brand-dark-2 rounded-sm border border-gray-100 dark:border-gray-800 animate-flash">
                     <div className="font-display font-black text-sm text-brand-red">Fast</div>
@@ -453,7 +453,7 @@ export default function WhyChooseAkilina() {
                 className="text-brand-red-light font-semibold text-lg mb-10 leading-relaxed"
                 style={{ opacity: ctaInView ? 1 : 0, transition: 'opacity 0.7s ease 700ms' }}
               >
-                If that sounds like your business — we should talk.
+                If that sounds like your business - we should talk.
               </p>
 
               {/* 3D CTA Buttons */}
