@@ -18,7 +18,7 @@ const philosophyItems = [
     icon: Zap,
     label: 'Our Edge',
     title: 'Quality Without Compromise',
-    body: 'We provide excellent products and services based on scope, cost, and time without compromising quality — delivering consistent value at every engagement.',
+    body: 'We provide excellent products and services based on scope, cost, and time without compromising quality - delivering consistent value at every engagement.',
   },
 ];
 

@@ -43,10 +43,10 @@ export default function Footer() {
                 className="h-16 w-auto flex-shrink-0 hover:scale-110 transition-transform duration-300 drop-shadow-lg"
               />
               <div className="flex flex-col leading-none">
-                <span className="font-display font-medium text-[1.3125rem] text-white">
+                <span className="font-display font-medium text-[1.125rem] text-white">
                   Akilina
                 </span>
-                <span className="font-display font-bold text-[10px] text-gray-300">
+                <span className="font-display font-normal text-[9px] text-gray-300">
                   Nigeria Limited
                 </span>
               </div>

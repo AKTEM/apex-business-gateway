@@ -135,7 +135,7 @@ export default function Careers() {
               {/* Panel Footer */}
               <div className="border-t border-gray-100 dark:border-gray-800 p-5 bg-gray-50 dark:bg-brand-dark-2">
                 <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
-                  Stay connected — follow us for updates on new openings
+                  Stay connected - follow us for updates on new openings
                 </p>
               </div>
             </div>

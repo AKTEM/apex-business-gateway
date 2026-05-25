@@ -35,7 +35,7 @@ export const services: ServiceData[] = [
     cardImage:
       'https://www.kilgore.edu/wp-content/uploads/2025/03/procurement-art-for-web-copy-1536x1010.webp',
     intro: [
-      "Akilina's procurement services give Nigerian enterprises access to a managed global sourcing capability — reducing vendor risk, controlling costs, and protecting quality at every stage of the purchase cycle.",
+      "Akilina's procurement services give Nigerian enterprises access to a managed global sourcing capability - reducing vendor risk, controlling costs, and protecting quality at every stage of the purchase cycle.",
       "Our procurement service is built around prevention. We manage the full procurement cycle from identifying and verifying suppliers, through purchase order execution and pre-shipment quality verification, to import documentation preparation and freight coordination. By the time your cargo reaches the Nigerian border, every document is correct, every classification is accurate, and every duty liability has been calculated in advance.",
     ],
     sections: [
@@ -44,7 +44,7 @@ export const services: ServiceData[] = [
         bullets: [
           'Supplier identification and background verification locally and across Asia, Europe, and the Americas',
           'Local and international procurement of office furniture, equipment, chemicals, additives, stationery, and industrial appliances',
-          'Pharmaceutical product procurement — APIs, finished dosage forms, medical equipment, and consumables, with full NAFDAC coordination',
+          'Pharmaceutical product procurement - APIs, finished dosage forms, medical equipment, and consumables, with full NAFDAC coordination',
           'Purchase order preparation, review, and vendor communication management',
           'Pre-shipment inspection coordination and quality assurance reporting',
           'HS Code classification and import duty pre-computation',
@@ -56,7 +56,7 @@ export const services: ServiceData[] = [
       {
         heading: 'OEM Representation & Market Entry Support',
         body:
-          "Akilina provides representation and market entry support for Original Equipment Manufacturers (OEMs) and international companies seeking to establish a commercial or operational presence in Nigeria. We act as your in-market representative — handling procurement logistics, regulatory liaison, and operational groundwork — giving your company a reliable soft landing into the Nigerian market.",
+          "Akilina provides representation and market entry support for Original Equipment Manufacturers (OEMs) and international companies seeking to establish a commercial or operational presence in Nigeria. We act as your in-market representative - handling procurement logistics, regulatory liaison, and operational groundwork - giving your company a reliable soft landing into the Nigerian market.",
         bullets: [
           'OEMs supplying Nigerian manufacturers, energy companies, or government agencies',
           'International suppliers seeking local procurement and distribution representation',
@@ -87,7 +87,7 @@ export const services: ServiceData[] = [
     cardImage:
       'https://bafcointl.com/wp-content/uploads/2024/08/freight-forwarding-company-in-saudi-arabia-1.jpg',
     intro: [
-      'Akilina Nigeria Limited is your freight forwarding partner for cargo movement on all major international trade lanes — Asia, Europe, the Americas, and across Africa. We manage the booking, the documentation, and the cargo so you can manage your business.',
+      'Akilina Nigeria Limited is your freight forwarding partner for cargo movement on all major international trade lanes - Asia, Europe, the Americas, and across Africa. We manage the booking, the documentation, and the cargo so you can manage your business.',
     ],
     sections: [
       {
@@ -105,7 +105,7 @@ export const services: ServiceData[] = [
       {
         heading: 'Sea Freight Forwarding',
         body:
-          'Akilina manages FCL and LCL sea freight on all major international shipping routes. We work with established shipping lines to secure competitive rates and manage all maritime documentation — from bill of lading to pre-shipment inspection certificates.',
+          'Akilina manages FCL and LCL sea freight on all major international shipping routes. We work with established shipping lines to secure competitive rates and manage all maritime documentation - from bill of lading to pre-shipment inspection certificates.',
         bullets: [
           'FCL and LCL ocean freight on Asia-Nigeria, Europe-Nigeria, and Americas-Nigeria corridors',
           'Vessel booking and space management with major shipping lines',
@@ -166,20 +166,20 @@ export const services: ServiceData[] = [
     cardImage:
       'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
-      'Akilina Nigeria Limited operates with deep port experience — clearing consignments accurately, compliantly, and on schedule across all major Nigerian ports of entry.',
+      'Akilina Nigeria Limited operates with deep port experience - clearing consignments accurately, compliantly, and on schedule across all major Nigerian ports of entry.',
       'Our Customs team has processed consignments across all dutiable categories: general merchandise, industrial machinery, raw materials, finished goods, chemicals and additives, regulated items, and project cargo.',
     ],
     sections: [
       {
         heading: 'Ports & Border Points We Operate',
         bullets: [
-          'Apapa Container Terminal — Lagos',
-          'Tin Can Island Port — Lagos',
-          'PTML (Port & Terminal Multiservices Limited) — Lagos',
-          'Onne Oil & Gas Free Zone — Rivers State',
-          'Seme Border — Lagos / Benin Republic',
-          'Murtala Muhammed Airport — Air Cargo Clearance',
-          'Nnamdi Azikiwe Airport — Abuja',
+          'Apapa Container Terminal - Lagos',
+          'Tin Can Island Port - Lagos',
+          'PTML (Port & Terminal Multiservices Limited) - Lagos',
+          'Onne Oil & Gas Free Zone - Rivers State',
+          'Seme Border - Lagos / Benin Republic',
+          'Murtala Muhammed Airport - Air Cargo Clearance',
+          'Nnamdi Azikiwe Airport - Abuja',
         ],
       },
       {
@@ -206,7 +206,7 @@ export const services: ServiceData[] = [
     cardImage:
       'https://renamyglobal.com/wp-content/uploads/2025/11/export-consultants3.jpg',
     intro: [
-      'Akilina Nigeria Limited manages the full regulatory lifecycle of every import and export transaction — documentation, duty management, agency coordination, and compliance — so your trade flows without interruption.',
+      'Akilina Nigeria Limited manages the full regulatory lifecycle of every import and export transaction - documentation, duty management, agency coordination, and compliance - so your trade flows without interruption.',
     ],
     sections: [
       {
@@ -223,12 +223,12 @@ export const services: ServiceData[] = [
       {
         heading: 'Export Management',
         body:
-          'Akilina manages export documentation comprehensively — ensuring your export cargo meets the documentary requirements of both Nigerian authorities and receiving-country Customs. We have direct export experience with Nigerian commodities including charcoal, Lithium, Titanium, spices, and cashew nuts, managing the full documentation and logistics chain from origin to international delivery.',
+          'Akilina manages export documentation comprehensively - ensuring your export cargo meets the documentary requirements of both Nigerian authorities and receiving-country Customs. We have direct export experience with Nigerian commodities including charcoal, Lithium, Titanium, spices, and cashew nuts, managing the full documentation and logistics chain from origin to international delivery.',
       },
     ],
     ctas: [
       { label: 'Discuss Your Import Requirements', href: contact },
-      { label: 'Export Enquiry — Contact Us', href: contact },
+      { label: 'Export Enquiry - Contact Us', href: contact },
     ],
   },
   {
@@ -244,18 +244,18 @@ export const services: ServiceData[] = [
       'https://i0.wp.com/www.ronishlogistics.com/wp-content/uploads/2025/07/Haulage-Companies-in-Lagos.jpg?fit=1200%2C800&ssl=1',
     intro: [
       'Akilina brings deep knowledge of Lagos roads and routes, built through direct operational experience in the transport and haulage sector. We run documented procedures, driver briefings, and route coordination to ensure every container that moves under our management is accounted for at every stage of the journey.',
-      "From container release at the port to delivery at your facility — Akilina's haulage service manages every kilometre of the journey with documented procedures, driver accountability, and real-time cargo updates.",
+      "From container release at the port to delivery at your facility - Akilina's haulage service manages every kilometre of the journey with documented procedures, driver accountability, and real-time cargo updates.",
     ],
     sections: [
       {
         heading: 'Haulage Capabilities',
         bullets: [
-          '20ft and 40ft standard container transport — port to factory or warehouse',
+          '20ft and 40ft standard container transport - port to factory or warehouse',
           'Flatbed haulage for project cargo, structural steel, and oversized equipment',
           'Lowbed haulage for heavy machinery, generators, and industrial plant',
-          'Bonded haulage — transporting goods under Customs seal to bonded warehouses',
-          'Barging services — waterway cargo movement where applicable',
-          'Interstate distribution — Lagos, Abuja, Port Harcourt, Kano, Onitsha, Aba, and all major commercial destinations',
+          'Bonded haulage - transporting goods under Customs seal to bonded warehouses',
+          'Barging services - waterway cargo movement where applicable',
+          'Interstate distribution - Lagos, Abuja, Port Harcourt, Kano, Onitsha, Aba, and all major commercial destinations',
           'Night convoy coordination for time-critical cargo, with security escort where required',
         ],
       },
@@ -278,7 +278,7 @@ export const services: ServiceData[] = [
     cardImage:
       'https://img.freepik.com/free-photo/photorealistic-scene-with-warehouse-logistics-operations_23-2151468808.jpg?semt=ais_hybrid&w=740&q=80',
     intro: [
-      'Akilina provides secure, managed warehousing with inventory tracking, distribution management, and fully documented receipt and dispatch processes — giving your goods a controlled environment between port and destination.',
+      'Akilina provides secure, managed warehousing with inventory tracking, distribution management, and fully documented receipt and dispatch processes - giving your goods a controlled environment between port and destination.',
     ],
     sections: [
       {
@@ -310,21 +310,21 @@ export const services: ServiceData[] = [
     cardImage:
       'https://img.magnific.com/free-photo/firm-handshake_1098-16548.jpg?semt=ais_hybrid&w=740&q=80',
     intro: [
-      "Akilina's outsourcing service embeds experienced logistics and procurement professionals within your operation — giving you the capability of a fully staffed supply chain team.",
-      'Building an in-house logistics and procurement team is expensive. A Customs clearance expert, a procurement manager, a haulage coordinator, and a documentation specialist — each with the market experience to perform at enterprise level — represents a significant payroll commitment for a function that is not your core business.',
-      'Our outsourcing service gives you exactly this capability — deployed as needed, scaled as required, and managed by us so you benefit from senior logistics expertise without the recruitment, training, and retention overhead.',
+      "Akilina's outsourcing service embeds experienced logistics and procurement professionals within your operation - giving you the capability of a fully staffed supply chain team.",
+      'Building an in-house logistics and procurement team is expensive. A Customs clearance expert, a procurement manager, a haulage coordinator, and a documentation specialist - each with the market experience to perform at enterprise level - represents a significant payroll commitment for a function that is not your core business.',
+      'Our outsourcing service gives you exactly this capability - deployed as needed, scaled as required, and managed by us so you benefit from senior logistics expertise without the recruitment, training, and retention overhead.',
     ],
     sections: [
       {
         heading: 'What Outsourcing with Akilina Includes',
         bullets: [
-          'Dedicated account management — a named Akilina professional responsible for your logistics operations',
-          'Embedded operational support — our team works within your systems and processes',
+          'Dedicated account management - a named Akilina professional responsible for your logistics operations',
+          'Embedded operational support - our team works within your systems and processes',
           'Customs clearance management for all your imports and exports',
           'Freight booking, tracking, and vendor relationship management on your behalf',
-          'Procurement coordination — supplier communication, purchase order tracking, delivery confirmation',
-          'Monthly operational reporting — KPI-driven logistics performance reports for management review',
-          'Escalation management — senior Akilina leadership engagement when operational issues arise',
+          'Procurement coordination - supplier communication, purchase order tracking, delivery confirmation',
+          'Monthly operational reporting - KPI-driven logistics performance reports for management review',
+          'Escalation management - senior Akilina leadership engagement when operational issues arise',
         ],
       },
       {

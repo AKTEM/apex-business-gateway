@@ -77,14 +77,14 @@ export default function Navbar() {
             />
             <div className="flex flex-col leading-none">
               <span
-                className={`font-display font-medium text-[1.3125rem] transition-colors duration-300 ${
+                className={`font-display font-medium text-[1.125rem] transition-colors duration-300 ${
                   isSolid ? 'text-gray-900 dark:text-white' : 'text-white'
                 }`}
               >
                 Akilina
               </span>
               <span
-                className={`font-display font-bold text-[10px] transition-colors duration-300 ${
+                className={`font-display font-normal text-[9px] transition-colors duration-300 ${
                   isSolid ? 'text-gray-700 dark:text-gray-300' : 'text-white/90'
                 }`}
               >
