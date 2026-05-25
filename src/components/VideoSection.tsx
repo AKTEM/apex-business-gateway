@@ -105,6 +105,11 @@ export default function VideoSection() {
               muted
               loop
               playsInline
+              // @ts-ignore - iOS Safari attribute
+              webkit-playsinline="true"
+              preload="auto"
+              controls={false}
+              disablePictureInPicture
               poster="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1280"
             >
               <source src="/videos/akilina-showcase.mp4" type="video/mp4" />

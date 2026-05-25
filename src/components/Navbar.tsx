@@ -77,7 +77,7 @@ export default function Navbar() {
             />
             <div className="flex flex-col leading-none">
               <span
-                className={`font-display font-black text-sm transition-colors duration-300 ${
+                className={`font-display font-medium text-[1.3125rem] transition-colors duration-300 ${
                   isSolid ? 'text-gray-900 dark:text-white' : 'text-white'
                 }`}
               >
