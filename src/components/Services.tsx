@@ -104,7 +104,7 @@ function ServiceCard({
           <div className="mt-auto">
             <Link
               to={`/services/${service.id}`}
-              className="w-full inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-red-deep text-white font-semibold text-sm px-6 py-3 rounded-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
+              className="w-full inline-flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 font-semibold text-sm px-6 py-3 rounded-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
             >
               <span>Learn More</span>
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
