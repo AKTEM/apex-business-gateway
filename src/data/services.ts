@@ -1,5 +1,5 @@
 import {
-  ShoppingCart, Plane, FileCheck, Globe, Truck, Warehouse, Users, Scale,
+  ShoppingCart, Plane, FileCheck, Globe, Truck, Warehouse, Users, Scale, PackageSearch,
   type LucideIcon,
 } from 'lucide-react';
 
@@ -336,6 +336,42 @@ export const services: ServiceData[] = [
     ctas: [
       { label: 'Enquire About Outsourcing', href: contact },
       { label: 'Request a Service Scope Discussion', href: contact },
+    ],
+  },
+  {
+    slug: 'logistics',
+    title: 'Logistics Services',
+    shortTitle: 'Logistics',
+    tagline: 'Logistics That Moves at the Speed of Your Business.',
+    cardDescription:
+      'Integrated port-to-warehouse logistics with one team owning the full outcome.',
+    icon: PackageSearch,
+    heroImage:
+      'https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage:
+      'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800',
+    intro: [
+      'Akilina manages the full physical movement of your goods from arrival at port through inland transportation to warehouse receipt with the operational controls that keep your production lines running and your customers satisfied.',
+      "Akilina's logistics service is integrated by design. We manage the transition between every stage from Customs clearance hands off to haulage, haulage hands off to warehousing, warehousing coordinates outbound distribution. One team. One communication channel. One company that owns the outcome.",
+      'Our services are customised per specific client application. We apply proven project management, process accountability, and operational discipline to deliver logistical solutions that complete your supply chain within scope, time, and budget.',
+    ],
+    sections: [
+      {
+        heading: 'Our Logistics Capabilities',
+        bullets: [
+          'Port operations management - Customs liaison, cargo examination coordination, container handling oversight',
+          'Inland transportation - Standard, flatbed, lowbed, and specialist vehicle options for all cargo types',
+          'Warehouse reception - Documented receipt, condition verification, and inventory recording on arrival',
+          'Inventory management - Real-time stock tracking, FIFO management, and periodic stock reconciliation',
+          'Last-mile distribution - Delivery to retail networks, production facilities, or client locations',
+          'Barging services - Waterway cargo movement where applicable',
+          'Reverse logistics - Return cargo management and re-export coordination',
+        ],
+      },
+    ],
+    ctas: [
+      { label: 'Request a Logistics Quotation', href: contact },
+      { label: 'Speak to Our Operations Team', href: contact },
     ],
   },
 ];
