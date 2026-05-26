@@ -339,7 +339,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://img.freepik.com/premium-photo/transportation-logistics_37416-165.jpg?semt=ais_hybrid&w=740&q=80',
     intro: [
       'Akilina manages the full physical movement of your goods from arrival at port through inland transportation to warehouse receipt with the operational controls that keep your production lines running and your customers satisfied.',
       "Akilina's logistics service is integrated by design. We manage the transition between every stage from Customs clearance hands off to haulage, haulage hands off to warehousing, warehousing coordinates outbound distribution. One team. One communication channel. One company that owns the outcome.",
