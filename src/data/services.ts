@@ -28,7 +28,7 @@ export const services: ServiceData[] = [
     shortTitle: 'Procurement',
     tagline: 'The Right Goods. The Right Source. On Your Timeline.',
     cardDescription:
-      'International sourcing, supplier identification, purchase management, and quality verification.',
+      'Global sourcing, vendor management, and supply chain optimisation',
     icon: ShoppingCart,
     heroImage:
       'https://emedia1.nhs.wales/NWSSP/cache/file/B3BA2208-F772-4311-BA41FC6DAAA4031C_carouselimage.png',
@@ -48,7 +48,7 @@ export const services: ServiceData[] = [
           'Purchase order preparation, review, and vendor communication management',
           'Pre-shipment inspection coordination and quality assurance reporting',
           'HS Code classification and import duty pre-computation',
-          'Form M application and pre-shipment inspection scheduling with NAFDAC, SON, and other regulatory agencies',
+          'Form M application and pre-shipment inspection scheduling with NAFDAC, SON, and other regulatory agencies where required',
           'Cargo consolidation for cost-efficient container utilisation',
           'Import documentation preparation: commercial invoice review, packing list verification, bill of lading coordination',
         ],
@@ -56,7 +56,7 @@ export const services: ServiceData[] = [
       {
         heading: 'OEM Representation & Market Entry Support',
         body:
-          "Akilina provides representation and market entry support for Original Equipment Manufacturers (OEMs) and international companies seeking to establish a commercial or operational presence in Nigeria. We act as your in-market representative - handling procurement logistics, regulatory liaison, and operational groundwork - giving your company a reliable soft landing into the Nigerian market.",
+          "Akilina provides representation and market entry support for Original Equipment Manufacturers (OEMs) and international companies seeking to establish a commercial or operational presence in Nigeria. We act as your in-market representative, handling procurement logistics, regulatory liaison, and operational groundwork, giving your company a reliable soft landing into the Nigerian market. This service is designed for:",
         bullets: [
           'OEMs supplying Nigerian manufacturers, energy companies, or government agencies',
           'International suppliers seeking local procurement and distribution representation',
@@ -80,40 +80,29 @@ export const services: ServiceData[] = [
     title: 'Freight Forwarding',
     shortTitle: 'Freight Forwarding',
     tagline: 'Your Cargo. Our Route. Every Destination.',
-    cardDescription: 'Air and sea freight on all major international trade lanes.',
+    cardDescription: 'Air and sea freight across international trade corridors.',
     icon: Plane,
     heroImage:
       'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
       'https://bafcointl.com/wp-content/uploads/2024/08/freight-forwarding-company-in-saudi-arabia-1.jpg',
     intro: [
-      'Akilina Nigeria Limited is your freight forwarding partner for cargo movement on all major international trade lanes - Asia, Europe, the Americas, and across Africa. We manage the booking, the documentation, and the cargo so you can manage your business.',
+      'Air and sea freight on all major international trade lanes',
     ],
     sections: [
       {
-        heading: 'Air Freight Forwarding',
+        heading: 'Air and sea freight Forwarding',
         body:
-          'We manage air freight bookings, airway bill preparation, airline coordination, and cargo documentation for express and scheduled air shipments to and from Nigeria, working with major carriers operating Nigerian international gateways.',
+          'We manage:',
         bullets: [
-          'Express air freight for time-critical consignments',
-          'Full charter coordination for oversized or high-value cargo',
-          'Temperature-sensitive and perishable air cargo management',
-          'Airway bill (AWB) preparation and carrier documentation',
-          'Airport-to-port cargo coordination with Nigerian Customs air cargo processing',
+          'Bookings',
+          'Documentation',
+          'Cargo tracking',
+          'Coordination with shipping lines and airlines on your behalf',
+         
         ],
       },
-      {
-        heading: 'Sea Freight Forwarding',
-        body:
-          'Akilina manages FCL and LCL sea freight on all major international shipping routes. We work with established shipping lines to secure competitive rates and manage all maritime documentation - from bill of lading to pre-shipment inspection certificates.',
-        bullets: [
-          'FCL and LCL ocean freight on Asia-Nigeria, Europe-Nigeria, and Americas-Nigeria corridors',
-          'Vessel booking and space management with major shipping lines',
-          'Bill of lading preparation and shipping instruction coordination',
-          'Cargo consolidation services for LCL shipments',
-          'Pre-arrival notification and port arrival coordination',
-        ],
-      },
+      
     ],
     ctas: [
       { label: 'Get a Freight Quote', href: contact },
@@ -126,14 +115,14 @@ export const services: ServiceData[] = [
     shortTitle: 'Regulatory Advisory',
     tagline: 'Navigate Nigeria’s Trade Environment with Confidence.',
     cardDescription:
-      'Expert guidance on import/export compliance, customs documentation, and trade regulations.',
+      'Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements',
     icon: Scale,
     heroImage:
       'https://balguerie.com/images/balguerie/Actualites/logistique-internationale-nov-21.jpg',
     cardImage:
       'https://cdn.prod.website-files.com/6357bf78dc4745619d359b6e/6453ab61088440e65867cdd8_Supporting%20Wealth%20Managers%20with%20regulatory%20requirements.jpg',
     intro: [
-      "Our Regulatory Advisory service helps businesses navigate Nigeria's complex trade environment with expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements.",
+      "Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements. Our Regulatory Advisory service helps businesses navigate Nigeria's complex trade environment",
     ],
     sections: [
       {
@@ -159,7 +148,7 @@ export const services: ServiceData[] = [
     shortTitle: 'Customs Clearance',
     tagline: 'Clear. Compliant. On Schedule.',
     cardDescription:
-      'Fast, compliant, penalty-free customs clearance at all major Nigerian ports.',
+      'Fast, compliant clearance at all Nigerian ports of entry',
     icon: FileCheck,
     heroImage:
       'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1920',
@@ -199,7 +188,7 @@ export const services: ServiceData[] = [
     shortTitle: 'Import & Export',
     tagline: 'Import Without Stress. Export Without Barriers.',
     cardDescription:
-      'Full documentation management, duty computation, and regulatory compliance.',
+      'Documentation, duty management, and regulatory compliance',
     icon: Globe,
     heroImage:
       'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1920',
@@ -212,12 +201,13 @@ export const services: ServiceData[] = [
       {
         heading: 'Import Management',
         body:
-          'Importing into Nigeria requires coordinated engagement with multiple agencies and systems: the Central Bank of Nigeria for Form M processing, the Nigeria Customs Service for clearance, NAFDAC for regulated goods, SON for standardised products, and post-clearance verification. Akilina manages these processes simultaneously.',
+          'Importing into Nigeria requires coordinated engagement with multiple agencies and systems:',
         bullets: [
-          'Form M, NESS, and combined certificate processing',
-          'Pre-shipment inspection coordination',
-          'Duty computation and tariff verification',
-          'NAFDAC, SON, and agency permit liaison',
+          'The Central Bank of Nigeria for Form M processing',
+          'The Nigeria Customs Service for clearance',
+          'NAFDAC for regulated goods',
+          'SON for standardised products, and post-clearance verification.',
+          'Akilina manages these processes simultaneously.',
         ],
       },
       {
@@ -236,7 +226,7 @@ export const services: ServiceData[] = [
     title: 'Haulage Services',
     shortTitle: 'Haulage',
     tagline: 'Port to Factory. On Time. Every Time.',
-    cardDescription: 'Nationwide container and cargo transportation across Nigeria.',
+    cardDescription: 'Nationwide inland transportation and container delivery',
     icon: Truck,
     heroImage:
       'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=1920',
@@ -271,7 +261,7 @@ export const services: ServiceData[] = [
     shortTitle: 'Warehousing',
     tagline: 'Secure Storage. Tracked Inventory. Reliable Dispatch.',
     cardDescription:
-      'Secure, managed storage with inventory tracking and distribution management.',
+      'Secure storage, inventory management, and distribution logistics',
     icon: Warehouse,
     heroImage:
       'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1920',
@@ -303,7 +293,7 @@ export const services: ServiceData[] = [
     shortTitle: 'Outsourcing',
     tagline: 'Your Logistics Department. Without the Headcount.',
     cardDescription:
-      'Embedded logistics and procurement support for dedicated operational capacity.',
+      'Embedded logistics support for organisations requiring dedicated operational capacity',
     icon: Users,
     heroImage:
       'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920',
@@ -330,7 +320,7 @@ export const services: ServiceData[] = [
       {
         heading: 'Who This Service Is Designed For',
         body:
-          'Energy companies managing equipment importation; FMCG companies expanding their distribution footprint without adding logistics headcount; manufacturers whose procurement team handles trade but lacks customs expertise; government agencies procuring internationally under competitive tender; and growing trading companies that need enterprise-grade logistics management without enterprise-level internal costs.',
+          'This includes: Energy companies managing equipment importation; FMCG companies expanding their distribution footprint without adding logistics headcount; manufacturers whose procurement team handles trade but lacks customs expertise; government agencies procuring internationally under competitive tender; and growing trading companies that need enterprise-grade logistics management without enterprise-level internal costs.',
       },
     ],
     ctas: [

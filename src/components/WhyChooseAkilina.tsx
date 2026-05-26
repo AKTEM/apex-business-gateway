@@ -416,7 +416,7 @@ export default function WhyChooseAkilina() {
                 <div className="flex items-center gap-1.5 px-4 py-1.5 bg-brand-red/15 border border-brand-red/30 rounded-full">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
                   <span className="text-brand-red-light text-xs font-bold uppercase tracking-widest">
-                    The Akilina Guarantee
+                    Akilina Nigeria Limited is the right partner
                   </span>
                 </div>
               </div>
