@@ -1,5 +1,5 @@
 import {
-  ShoppingCart, Plane, FileCheck, Globe, Truck, Warehouse, Users, Scale,
+  ShoppingCart, Plane, FileCheck, Globe, Truck, Warehouse, Users, Scale, PackageSearch,
   type LucideIcon,
 } from 'lucide-react';
 

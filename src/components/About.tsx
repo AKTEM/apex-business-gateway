@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import {
-  ArrowRight, CheckCircle, Shield, Target, Eye, Heart, Zap,
+  ArrowRight, CheckCircle, Shield, ShieldCheck, Target, Eye, Heart, Zap,
   Award, MapPin, Anchor, Truck, Globe, FileCheck,
   TrendingUp, Building2, Scale, Handshake
 } from 'lucide-react';
@@ -308,7 +308,7 @@ export default function About() {
             >
               <div className="relative overflow-hidden rounded-sm bg-gradient-to-br from-brand-red to-brand-red-deep p-8 h-full text-white transition-all duration-500 hover:shadow-red-glow-lg">
                 <div className="w-14 h-14 rounded-sm bg-white/15 flex items-center justify-center mb-6 group-hover:bg-white/25 transition-all duration-500">
-                  <Heart size={24} className="text-white animate-icon-float" />
+                  <ShieldCheck size={24} className="text-white animate-icon-float" />
                 </div>
 
                 <h3 className="font-display font-bold text-xl mb-4">
@@ -410,12 +410,12 @@ export default function About() {
               <div className="relative overflow-hidden rounded-sm bg-gradient-to-r from-brand-red to-brand-red-deep p-8 text-white transition-all duration-500 hover:shadow-red-glow-lg max-w-2xl mx-auto">
                 <div className="flex items-start gap-5">
                   <div className="w-14 h-14 rounded-sm bg-white/15 flex items-center justify-center flex-shrink-0">
-                    <Zap size={26} className="text-white animate-icon-float" />
+                    <Shield size={26} className="text-white animate-icon-float" />
                   </div>
                   <div>
-                    <h4 className="font-display font-bold text-xl mb-2">Urgency</h4>
+                    <h4 className="font-display font-bold text-xl mb-2">Integrity</h4>
                     <p className="text-sm text-white/80 leading-relaxed">
-                      Akilina was built around speed: fast clearance, fast documentation, fast escalation, fast delivery.
+                      We quote transparently, communicate honestly, and report problems immediately. Our clients trust us with consignments of significant value because we have never given them a reason not to.
                     </p>
                   </div>
                 </div>
