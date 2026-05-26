@@ -268,17 +268,16 @@ export const services: ServiceData[] = [
     cardImage:
       'https://img.freepik.com/free-photo/photorealistic-scene-with-warehouse-logistics-operations_23-2151468808.jpg?semt=ais_hybrid&w=740&q=80',
     intro: [
-      'Akilina provides secure, managed warehousing with inventory tracking, distribution management, and fully documented receipt and dispatch processes - giving your goods a controlled environment between port and destination.',
+      'Secure, managed storage with:',
     ],
     sections: [
       {
         heading: 'Warehousing Capabilities',
         bullets: [
-          'Secure storage with controlled access and 24/7 monitoring',
-          'Inventory tracking with FIFO management and periodic stock reconciliation',
-          'Documented receipt and dispatch processes with condition verification',
-          'Distribution management and last-mile coordination',
-          'Bonded and general warehousing options',
+          'Inventory tracking',
+          'Distribution management',
+          'Documented receipt',
+          'Dispatch processes',
         ],
       },
     ],
