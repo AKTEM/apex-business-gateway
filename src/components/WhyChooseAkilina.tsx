@@ -566,8 +566,8 @@ export default function WhyChooseAkilina() {
 
                 <div className="relative rounded-sm overflow-hidden group" style={{ height: '152px' }}>
                   <img
-                    src="https://images.pexels.com/photos/4483942/pexels-photo-4483942.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Freight operations"
+                    src="https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Freight truck logistics"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-brand-black/30 group-hover:bg-brand-black/10 transition-colors duration-300" />
