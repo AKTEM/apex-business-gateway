@@ -54,10 +54,34 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setStatus('success');
-    setForm({ fullName: '', companyName: '', jobTitle: '', phone: '', email: '', service: '', message: '', preferredContact: 'email' });
-    setTimeout(() => setStatus('idle'), 5000);
+    try {
+      const response = await fetch('https://formspree.io/f/mojznvdo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          'Full Name': form.fullName,
+          'Email Address': form.email,
+          'Company Name': form.companyName,
+          'Job Title': form.jobTitle,
+          'Phone Number': form.phone,
+          'Service Required': form.service,
+          'Preferred Contact Method': form.preferredContact,
+          Message: form.message,
+          _subject: `New enquiry from ${form.fullName}${form.companyName ? ` (${form.companyName})` : ''}`,
+          _replyto: form.email,
+        }),
+      });
+      if (!response.ok) throw new Error('Submission failed');
+      setStatus('success');
+      setForm({ fullName: '', companyName: '', jobTitle: '', phone: '', email: '', service: '', message: '', preferredContact: 'email' });
+      setTimeout(() => setStatus('idle'), 5000);
+    } catch {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
   };
 
   return (
