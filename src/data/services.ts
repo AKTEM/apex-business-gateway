@@ -231,7 +231,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://i0.wp.com/www.ronishlogistics.com/wp-content/uploads/2025/07/Haulage-Companies-in-Lagos.jpg?fit=1200%2C800&ssl=1',
+      'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Akilina brings deep knowledge of Lagos roads and routes, built through direct operational experience in the transport and haulage sector. We run documented procedures, driver briefings, and route coordination to ensure every container that moves under our management is accounted for at every stage of the journey.',
       "From container release at the port to delivery at your facility - Akilina's haulage service manages every kilometre of the journey with documented procedures, driver accountability, and real-time cargo updates.",
