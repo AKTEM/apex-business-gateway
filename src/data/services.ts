@@ -31,9 +31,9 @@ export const services: ServiceData[] = [
       'Global sourcing, vendor management, and supply chain optimisation',
     icon: ShoppingCart,
     heroImage:
-      'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Akilina's procurement services give Nigerian enterprises access to a managed global sourcing capability - reducing vendor risk, controlling costs, and protecting quality at every stage of the purchase cycle.",
       "Our procurement service is built around prevention. We manage the full procurement cycle from identifying and verifying suppliers, through purchase order execution and pre-shipment quality verification, to import documentation preparation and freight coordination. By the time your cargo reaches the Nigerian border, every document is correct, every classification is accurate, and every duty liability has been calculated in advance.",
@@ -118,9 +118,9 @@ export const services: ServiceData[] = [
       'Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements',
     icon: Scale,
     heroImage:
-      'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements. Our Regulatory Advisory service helps businesses navigate Nigeria's complex trade environment",
     ],
@@ -295,9 +295,9 @@ export const services: ServiceData[] = [
       'Embedded logistics support for organisations requiring dedicated operational capacity',
     icon: Users,
     heroImage:
-      'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Akilina's outsourcing service embeds experienced logistics and procurement professionals within your operation - giving you the capability of a fully staffed supply chain team.",
       'Building an in-house logistics and procurement team is expensive. A Customs clearance expert, a procurement manager, a haulage coordinator, and a documentation specialist - each with the market experience to perform at enterprise level - represents a significant payroll commitment for a function that is not your core business.',
