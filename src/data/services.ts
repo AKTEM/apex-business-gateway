@@ -118,9 +118,9 @@ export const services: ServiceData[] = [
       'Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements',
     icon: Scale,
     heroImage:
-      'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements. Our Regulatory Advisory service helps businesses navigate Nigeria's complex trade environment",
     ],
