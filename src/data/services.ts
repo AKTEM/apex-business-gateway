@@ -31,9 +31,9 @@ export const services: ServiceData[] = [
       'Global sourcing, vendor management, and supply chain optimisation',
     icon: ShoppingCart,
     heroImage:
-      'https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://www.rib-software.com/app/uploads/2022/07/84-construction-procurement-management-jpg-webp.webp',
     cardImage:
-      'https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://www.rib-software.com/app/uploads/2022/07/84-construction-procurement-management-jpg-webp.webp',
     intro: [
       "Akilina's procurement services give Nigerian enterprises access to a managed global sourcing capability - reducing vendor risk, controlling costs, and protecting quality at every stage of the purchase cycle.",
       "Our procurement service is built around prevention. We manage the full procurement cycle from identifying and verifying suppliers, through purchase order execution and pre-shipment quality verification, to import documentation preparation and freight coordination. By the time your cargo reaches the Nigerian border, every document is correct, every classification is accurate, and every duty liability has been calculated in advance.",
@@ -229,9 +229,9 @@ export const services: ServiceData[] = [
     cardDescription: 'Nationwide inland transportation and container delivery',
     icon: Truck,
     heroImage:
-      'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://adsanrichgroup.com/wip/wp-content/uploads/2022/02/Haulage.jpg',
     cardImage:
-      'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://adsanrichgroup.com/wip/wp-content/uploads/2022/02/Haulage.jpg',
     intro: [
       'Akilina brings deep knowledge of Lagos roads and routes, built through direct operational experience in the transport and haulage sector. We run documented procedures, driver briefings, and route coordination to ensure every container that moves under our management is accounted for at every stage of the journey.',
       "From container release at the port to delivery at your facility - Akilina's haulage service manages every kilometre of the journey with documented procedures, driver accountability, and real-time cargo updates.",
@@ -264,9 +264,9 @@ export const services: ServiceData[] = [
       'Secure storage, inventory management, and distribution logistics',
     icon: Warehouse,
     heroImage:
-      'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://img.magnific.com/free-photo/vast-storage-building-full-products-placed-industrial-racks-with-tag_482257-83423.jpg?semt=ais_hybrid&w=740&q=80',
     cardImage:
-      'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://img.magnific.com/free-photo/vast-storage-building-full-products-placed-industrial-racks-with-tag_482257-83423.jpg?semt=ais_hybrid&w=740&q=80',
     intro: [
       'Secure, managed storage with:',
     ],
