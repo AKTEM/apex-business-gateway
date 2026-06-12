@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import logoImg from '../assets/Akii2.png';
+import logoImg from '../assets/Akii2.webp';
 import { services } from '../data/services';
 
 const navLinks = [

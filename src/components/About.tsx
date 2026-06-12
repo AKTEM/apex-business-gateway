@@ -5,7 +5,7 @@ import {
   TrendingUp, Building2, Scale, Handshake
 } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
-import logisticsImage from '../assets/transportation-logistics_37416-165.jpeg';
+import logisticsImage from '../assets/transportation-logistics_37416-165.webp';
 
 const values = [
   {

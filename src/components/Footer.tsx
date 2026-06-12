@@ -1,6 +1,6 @@
 import { Mail, MapPin, ArrowUpRight, ChevronRight } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import logoImg from '../assets/Akii2.png';
+import logoImg from '../assets/Akii2.webp';
 import { services } from '../data/services';
 
 const quickLinks = [
