@@ -193,7 +193,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://renamyglobal.com/wp-content/uploads/2025/11/export-consultants3.jpg',
+      'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Akilina Nigeria Limited manages the full regulatory lifecycle of every import and export transaction - documentation, duty management, agency coordination, and compliance - so your trade flows without interruption.',
     ],
