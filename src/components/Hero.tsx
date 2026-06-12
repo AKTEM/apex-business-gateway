@@ -152,11 +152,15 @@ export default function Hero() {
             }`}
             style={{ transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)' }}
           >
-            <img loading="lazy" decoding="async"
+            <img
+              loading={index === 0 ? 'eager' : 'lazy'}
+              decoding="async"
+              {...(index === 0 ? { fetchPriority: 'high' as any } : {})}
               src={slide.image}
               alt=""
               className={`w-full h-full object-cover ${index === currentSlide ? slide.kenBurns : ''}`}
             />
+
           </div>
         ))}
 
