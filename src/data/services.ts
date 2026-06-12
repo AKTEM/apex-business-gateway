@@ -264,9 +264,9 @@ export const services: ServiceData[] = [
       'Secure storage, inventory management, and distribution logistics',
     icon: Warehouse,
     heroImage:
-      'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://img.freepik.com/free-photo/photorealistic-scene-with-warehouse-logistics-operations_23-2151468808.jpg?semt=ais_hybrid&w=740&q=80',
+      'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Secure, managed storage with:',
     ],
