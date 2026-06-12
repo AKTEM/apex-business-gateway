@@ -31,9 +31,9 @@ export const services: ServiceData[] = [
       'Global sourcing, vendor management, and supply chain optimisation',
     icon: ShoppingCart,
     heroImage:
-      'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Akilina's procurement services give Nigerian enterprises access to a managed global sourcing capability - reducing vendor risk, controlling costs, and protecting quality at every stage of the purchase cycle.",
       "Our procurement service is built around prevention. We manage the full procurement cycle from identifying and verifying suppliers, through purchase order execution and pre-shipment quality verification, to import documentation preparation and freight coordination. By the time your cargo reaches the Nigerian border, every document is correct, every classification is accurate, and every duty liability has been calculated in advance.",
