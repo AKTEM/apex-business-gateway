@@ -68,7 +68,7 @@ export default function Navbar() {
             onClick={() => handleNavClick('#home')}
             className="flex items-center gap-2 group transition-all duration-300"
           >
-            <img
+            <img loading="lazy" decoding="async"
               src={logoImg}
               alt="Akilina Nigeria Limited"
               className={`h-12 md:h-14 w-auto flex-shrink-0 drop-shadow-md group-hover:drop-shadow-lg group-hover:scale-105 transition-all duration-300 ${

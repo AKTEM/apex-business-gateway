@@ -54,7 +54,7 @@ function ServiceCard({
 
         {/* Image header - taller, no white overlay */}
         <div className="relative h-48 overflow-hidden">
-          <img
+          <img loading="lazy" decoding="async"
             src={service.image}
             alt={service.title}
             className="w-full h-full object-cover transition-transform duration-700"
@@ -166,7 +166,7 @@ export default function Services() {
         >
           {/* Background image with cinematic overlay */}
           <div className="absolute inset-0">
-            <img
+            <img loading="lazy" decoding="async"
               src="https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1920"
               alt=""
               className="w-full h-full object-cover"

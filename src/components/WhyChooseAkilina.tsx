@@ -258,7 +258,7 @@ export default function WhyChooseAkilina() {
               }}
             >
               <div className="relative rounded-sm overflow-hidden h-full min-h-[340px] group">
-                <img
+                <img loading="lazy" decoding="async"
                   src="https://img.freepik.com/premium-photo/logistics-import-export-cargo-transportation-industry-concept-delivery-cargo-trucks-driving_1149930-2336.jpg?semt=ais_hybrid&w=740&q=80"
                   alt="Logistics operations"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -378,7 +378,7 @@ export default function WhyChooseAkilina() {
         style={{ minHeight: '600px' }}
       >
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy" decoding="async"
             ref={bgRef}
             src="https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt=""
@@ -552,7 +552,7 @@ export default function WhyChooseAkilina() {
                 <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-2 border-b-2 border-brand-red/50 z-10" />
 
                 <div className="row-span-2 relative rounded-sm overflow-hidden group" style={{ height: '320px' }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="Container port"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -565,7 +565,7 @@ export default function WhyChooseAkilina() {
                 </div>
 
                 <div className="relative rounded-sm overflow-hidden group" style={{ height: '152px' }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="Freight truck logistics"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -574,7 +574,7 @@ export default function WhyChooseAkilina() {
                 </div>
 
                 <div className="relative rounded-sm overflow-hidden group" style={{ height: '152px' }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="Cargo plane"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

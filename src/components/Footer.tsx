@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-5 group cursor-pointer" onClick={() => handleNavClick('#home')}>
-              <img
+              <img loading="lazy" decoding="async"
                 src={logoImg}
                 alt="Akilina Nigeria Limited"
                 className="h-16 w-auto flex-shrink-0 hover:scale-110 transition-transform duration-300 drop-shadow-lg"

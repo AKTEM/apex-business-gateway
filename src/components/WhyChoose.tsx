@@ -65,7 +65,7 @@ export default function WhyChoose() {
     >
       {/* Background */}
       <div className="absolute inset-0">
-        <img
+        <img loading="lazy" decoding="async"
           src="https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt=""
           className="w-full h-full object-cover opacity-10"
@@ -138,7 +138,7 @@ export default function WhyChoose() {
         >
           {/* Background image */}
           <div className="absolute inset-0">
-            <img
+            <img loading="lazy" decoding="async"
               src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=1280"
               alt=""
               className="w-full h-full object-cover opacity-20"

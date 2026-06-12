@@ -88,7 +88,7 @@ function TestimonialCard({ testimonial, isActive, index }: TestimonialCardProps)
 
         {/* Author Info */}
         <div className="flex items-center gap-2 sm:gap-4 pt-3 sm:pt-6 border-t border-gray-200 dark:border-gray-700">
-          <img
+          <img loading="lazy" decoding="async"
             src={testimonial.image}
             alt={testimonial.name}
             className="w-10 sm:w-16 h-10 sm:h-16 rounded-full object-cover flex-shrink-0"
