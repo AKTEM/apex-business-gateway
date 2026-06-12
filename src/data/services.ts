@@ -85,7 +85,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://bafcointl.com/wp-content/uploads/2024/08/freight-forwarding-company-in-saudi-arabia-1.jpg',
+      'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Air and sea freight on all major international trade lanes',
     ],
