@@ -118,9 +118,9 @@ export const services: ServiceData[] = [
       'Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements',
     icon: Scale,
     heroImage:
-      'https://balguerie.com/images/balguerie/Actualites/logistique-internationale-nov-21.jpg',
+      'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://cdn.prod.website-files.com/6357bf78dc4745619d359b6e/6453ab61088440e65867cdd8_Supporting%20Wealth%20Managers%20with%20regulatory%20requirements.jpg',
+      'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements. Our Regulatory Advisory service helps businesses navigate Nigeria's complex trade environment",
     ],
