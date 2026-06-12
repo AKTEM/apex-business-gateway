@@ -31,9 +31,9 @@ export const services: ServiceData[] = [
       'Global sourcing, vendor management, and supply chain optimisation',
     icon: ShoppingCart,
     heroImage:
-      'https://emedia1.nhs.wales/NWSSP/cache/file/B3BA2208-F772-4311-BA41FC6DAAA4031C_carouselimage.png',
+      'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://www.kilgore.edu/wp-content/uploads/2025/03/procurement-art-for-web-copy-1536x1010.webp',
+      'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Akilina's procurement services give Nigerian enterprises access to a managed global sourcing capability - reducing vendor risk, controlling costs, and protecting quality at every stage of the purchase cycle.",
       "Our procurement service is built around prevention. We manage the full procurement cycle from identifying and verifying suppliers, through purchase order execution and pre-shipment quality verification, to import documentation preparation and freight coordination. By the time your cargo reaches the Nigerian border, every document is correct, every classification is accurate, and every duty liability has been calculated in advance.",
@@ -85,7 +85,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://bafcointl.com/wp-content/uploads/2024/08/freight-forwarding-company-in-saudi-arabia-1.jpg',
+      'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Air and sea freight on all major international trade lanes',
     ],
@@ -118,9 +118,9 @@ export const services: ServiceData[] = [
       'Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements',
     icon: Scale,
     heroImage:
-      'https://balguerie.com/images/balguerie/Actualites/logistique-internationale-nov-21.jpg',
+      'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://cdn.prod.website-files.com/6357bf78dc4745619d359b6e/6453ab61088440e65867cdd8_Supporting%20Wealth%20Managers%20with%20regulatory%20requirements.jpg',
+      'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Expert guidance on import/export compliance, customs documentation, trade regulations, and operational requirements. Our Regulatory Advisory service helps businesses navigate Nigeria's complex trade environment",
     ],
@@ -193,7 +193,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://renamyglobal.com/wp-content/uploads/2025/11/export-consultants3.jpg',
+      'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Akilina Nigeria Limited manages the full regulatory lifecycle of every import and export transaction - documentation, duty management, agency coordination, and compliance - so your trade flows without interruption.',
     ],
@@ -231,7 +231,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://i0.wp.com/www.ronishlogistics.com/wp-content/uploads/2025/07/Haulage-Companies-in-Lagos.jpg?fit=1200%2C800&ssl=1',
+      'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Akilina brings deep knowledge of Lagos roads and routes, built through direct operational experience in the transport and haulage sector. We run documented procedures, driver briefings, and route coordination to ensure every container that moves under our management is accounted for at every stage of the journey.',
       "From container release at the port to delivery at your facility - Akilina's haulage service manages every kilometre of the journey with documented procedures, driver accountability, and real-time cargo updates.",
@@ -264,9 +264,9 @@ export const services: ServiceData[] = [
       'Secure storage, inventory management, and distribution logistics',
     icon: Warehouse,
     heroImage:
-      'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=1600',
     cardImage:
-      'https://img.freepik.com/free-photo/photorealistic-scene-with-warehouse-logistics-operations_23-2151468808.jpg?semt=ais_hybrid&w=740&q=80',
+      'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Secure, managed storage with:',
     ],
@@ -297,7 +297,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://img.magnific.com/free-photo/firm-handshake_1098-16548.jpg?semt=ais_hybrid&w=740&q=80',
+      'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       "Akilina's outsourcing service embeds experienced logistics and procurement professionals within your operation - giving you the capability of a fully staffed supply chain team.",
       'Building an in-house logistics and procurement team is expensive. A Customs clearance expert, a procurement manager, a haulage coordinator, and a documentation specialist - each with the market experience to perform at enterprise level - represents a significant payroll commitment for a function that is not your core business.',
@@ -338,7 +338,7 @@ export const services: ServiceData[] = [
     heroImage:
       'https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=1920',
     cardImage:
-      'https://img.freepik.com/premium-photo/transportation-logistics_37416-165.jpg?semt=ais_hybrid&w=740&q=80',
+      'https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=800',
     intro: [
       'Akilina manages the full physical movement of your goods from arrival at port through inland transportation to warehouse receipt with the operational controls that keep your production lines running and your customers satisfied.',
       "Akilina's logistics service is integrated by design. We manage the transition between every stage from Customs clearance hands off to haulage, haulage hands off to warehousing, warehousing coordinates outbound distribution. One team. One communication channel. One company that owns the outcome.",

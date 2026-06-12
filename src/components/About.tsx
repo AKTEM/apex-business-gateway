@@ -5,7 +5,7 @@ import {
   TrendingUp, Building2, Scale, Handshake
 } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
-import logisticsImage from '../assets/transportation-logistics_37416-165.jpeg';
+import logisticsImage from '../assets/transportation-logistics_37416-165.webp';
 
 const values = [
   {
@@ -99,7 +99,7 @@ export default function About() {
             >
               <div className="relative rounded-sm overflow-hidden shadow-2xl img-corner-borders">
                 <div ref={storyImgRef}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={logisticsImage}
                     alt="Logistics operations"
                     className="w-full h-80 lg:h-[520px] object-cover transition-transform duration-700 hover:scale-105"
@@ -542,7 +542,7 @@ export default function About() {
               {/* Image mosaic */}
               <div className="grid grid-cols-3 gap-2 mb-8">
                 <div className="row-span-2 relative rounded-sm overflow-hidden group" style={{ minHeight: '180px' }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="https://i.pinimg.com/736x/96/e5/f8/96e5f8db92e2962cd7745c3f49cdabb6.jpg"
                     alt="Port operations"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -553,7 +553,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="relative rounded-sm overflow-hidden group" style={{ minHeight: '86px' }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/2147492600/images/1d54fc-16cd-168-276c-56156c675f6_Clearing_and_Forwarding_Courses.jpg"
                     alt="Freight"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -561,7 +561,7 @@ export default function About() {
                   <div className="absolute inset-0 bg-brand-black/30 group-hover:bg-brand-black/10 transition-colors duration-300" />
                 </div>
                 <div className="relative rounded-sm overflow-hidden group" style={{ minHeight: '86px' }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="https://cdn.vanguardngr.com/wp-content/uploads/2020/07/NPA-port-1000x600-1.jpg"
                     alt="Cargo"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -569,7 +569,7 @@ export default function About() {
                   <div className="absolute inset-0 bg-brand-black/30 group-hover:bg-brand-black/10 transition-colors duration-300" />
                 </div>
                 <div className="col-span-2 relative rounded-sm overflow-hidden group" style={{ minHeight: '86px' }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="Air freight"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

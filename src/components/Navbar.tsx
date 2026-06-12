@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import logoImg from '../assets/Akii2.png';
+import logoImg from '../assets/Akii2.webp';
 import { services } from '../data/services';
 
 const navLinks = [
@@ -68,7 +68,7 @@ export default function Navbar() {
             onClick={() => handleNavClick('#home')}
             className="flex items-center gap-2 group transition-all duration-300"
           >
-            <img
+            <img loading="eager" decoding="async" fetchPriority="high"
               src={logoImg}
               alt="Akilina Nigeria Limited"
               className={`h-12 md:h-14 w-auto flex-shrink-0 drop-shadow-md group-hover:drop-shadow-lg group-hover:scale-105 transition-all duration-300 ${

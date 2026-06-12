@@ -96,7 +96,7 @@ export default function Careers() {
               {/* Panel Header */}
               <div className="bg-brand-black p-6 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt=""
                     className="w-full h-full object-cover"

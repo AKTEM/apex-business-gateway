@@ -92,7 +92,7 @@ export default function LogisticsCarousel() {
               }`}
               style={{ transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)' }}
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={slide.image}
                 alt={slide.alt}
                 className="w-full h-full object-cover"

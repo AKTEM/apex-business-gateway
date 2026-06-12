@@ -45,7 +45,7 @@ export default function ServiceDetail() {
         <section className="relative overflow-hidden pt-28 lg:pt-36 pb-20 lg:pb-28">
           {/* Background image */}
           <div className="absolute inset-0">
-            <img
+            <img loading="lazy" decoding="async"
               src={service.heroImage}
               alt=""
               className="w-full h-full object-cover"
@@ -212,7 +212,7 @@ export default function ServiceDetail() {
         {/* CTA BANNER */}
         <section className="relative overflow-hidden bg-brand-black">
           <div className="absolute inset-0">
-            <img src={service.heroImage} alt="" className="w-full h-full object-cover opacity-20" />
+            <img loading="lazy" decoding="async" src={service.heroImage} alt="" className="w-full h-full object-cover opacity-20" />
             <div className="absolute inset-0 bg-gradient-to-r from-brand-black via-brand-black/95 to-brand-black/70" />
           </div>
           <div

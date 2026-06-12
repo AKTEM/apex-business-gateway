@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { ArrowRight, ChevronDown, Globe, Package, Truck, Users } from 'lucide-react';
-import image1 from '../assets/2151468882_Large.jpeg';
-import image2 from '../assets/2151989541.jpg';
-import image3 from '../assets/bernd-dittrich-Xk1IfNnEhRA-unsplash.jpg';
+import image1 from '../assets/2151468882_Large.webp';
+import image2 from '../assets/2151989541.webp';
+import image3 from '../assets/bernd-dittrich-Xk1IfNnEhRA-unsplash.webp';
 
 const slides = [
   {
@@ -153,10 +153,14 @@ export default function Hero() {
             style={{ transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)' }}
           >
             <img
+              loading={index === 0 ? 'eager' : 'lazy'}
+              decoding="async"
+              {...(index === 0 ? { fetchPriority: 'high' as any } : {})}
               src={slide.image}
               alt=""
               className={`w-full h-full object-cover ${index === currentSlide ? slide.kenBurns : ''}`}
             />
+
           </div>
         ))}
 
